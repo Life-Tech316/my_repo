@@ -1,0 +1,2194 @@
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ conda create -n my_dbt python=3.10 --file requirements.txt
+
+CondaFileIOError: 'requirements.txt'. [Errno 2] No such file or directory: 'requirements.txt'
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cp -ip ../
+.conda_envs_dir_test  dbt/                  my_env/               stremlit_env/
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cp -ip ../stremlit_env/requirements.txt ./
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ conda create -n my_dbt python=3.10 --file requirements.txt
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.3.1
+  latest version: 25.5.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=25.5.1
+
+
+
+## Package Plan ##
+
+  environment location: /home/user/anaconda3/envs/my_dbt
+
+  added / updated specs:
+    - matplotlib==3.9.2
+    - numpy==1.26.4
+    - pandas==2.2.3
+    - plotly==5.24.1
+    - python=3.10
+    - scikit-learn==1.5.2
+    - seaborn==0.13.2
+    - streamlit==1.39.0
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  altair             pkgs/main/linux-64::altair-5.5.0-py310h06a4308_0
+  arrow-cpp          pkgs/main/linux-64::arrow-cpp-19.0.0-h865e1df_2
+  attrs              pkgs/main/linux-64::attrs-24.3.0-py310h06a4308_0
+  aws-c-auth         pkgs/main/linux-64::aws-c-auth-0.6.19-h5eee18b_0
+  aws-c-cal          pkgs/main/linux-64::aws-c-cal-0.5.20-hdbd6064_0
+  aws-c-common       pkgs/main/linux-64::aws-c-common-0.8.5-h5eee18b_0
+  aws-c-compression  pkgs/main/linux-64::aws-c-compression-0.2.16-h5eee18b_0
+  aws-c-event-stream pkgs/main/linux-64::aws-c-event-stream-0.2.15-h6a678d5_0
+  aws-c-http         pkgs/main/linux-64::aws-c-http-0.6.25-h5eee18b_0
+  aws-c-io           pkgs/main/linux-64::aws-c-io-0.13.10-h5eee18b_0
+  aws-c-mqtt         pkgs/main/linux-64::aws-c-mqtt-0.7.13-h5eee18b_0
+  aws-c-s3           pkgs/main/linux-64::aws-c-s3-0.1.51-hdbd6064_0
+  aws-c-sdkutils     pkgs/main/linux-64::aws-c-sdkutils-0.1.6-h5eee18b_0
+  aws-checksums      pkgs/main/linux-64::aws-checksums-0.1.13-h5eee18b_0
+  aws-crt-cpp        pkgs/main/linux-64::aws-crt-cpp-0.18.16-h6a678d5_0
+  aws-sdk-cpp        pkgs/main/linux-64::aws-sdk-cpp-1.11.212-hecad206_0
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  blinker            pkgs/main/linux-64::blinker-1.9.0-py310h06a4308_0
+  boost-cpp          pkgs/main/linux-64::boost-cpp-1.82.0-hdb19cb5_2
+  bottleneck         pkgs/main/linux-64::bottleneck-1.4.2-py310ha9d4c09_0
+  brotli-python      pkgs/main/linux-64::brotli-python-1.0.9-py310h6a678d5_9
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6
+  c-ares             pkgs/main/linux-64::c-ares-1.19.1-h5eee18b_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2025.2.25-h06a4308_0
+  cachetools         pkgs/main/linux-64::cachetools-5.5.1-py310h06a4308_0
+  certifi            pkgs/main/linux-64::certifi-2025.4.26-py310h06a4308_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  click              pkgs/main/linux-64::click-8.1.8-py310h06a4308_0
+  contourpy          pkgs/main/linux-64::contourpy-1.3.1-py310hdb19cb5_0
+  cycler             pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  cyrus-sasl         pkgs/main/linux-64::cyrus-sasl-2.1.28-h52b45da_1
+  expat              pkgs/main/linux-64::expat-2.7.1-h6a678d5_0
+  fontconfig         pkgs/main/linux-64::fontconfig-2.14.1-h55d465d_3
+  fonttools          pkgs/main/linux-64::fonttools-4.55.3-py310h5eee18b_0
+  freetype           pkgs/main/linux-64::freetype-2.13.3-h4a9f257_0
+  gflags             pkgs/main/linux-64::gflags-2.2.2-h6a678d5_1
+  gitdb              pkgs/main/noarch::gitdb-4.0.7-pyhd3eb1b0_0
+  gitpython          pkgs/main/linux-64::gitpython-3.1.43-py310h06a4308_0
+  glog               pkgs/main/linux-64::glog-0.5.0-h6a678d5_1
+  icu                pkgs/main/linux-64::icu-73.1-h6a678d5_0
+  idna               pkgs/main/linux-64::idna-3.7-py310h06a4308_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2023.1.0-hdb19cb5_46306
+  jinja2             pkgs/main/linux-64::jinja2-3.1.6-py310h06a4308_0
+  joblib             pkgs/main/linux-64::joblib-1.4.2-py310h06a4308_0
+  jpeg               pkgs/main/linux-64::jpeg-9e-h5eee18b_3
+  jsonschema         pkgs/main/linux-64::jsonschema-4.23.0-py310h06a4308_0
+  jsonschema-specif~ pkgs/main/linux-64::jsonschema-specifications-2023.7.1-py310h06a4308_0
+  kiwisolver         pkgs/main/linux-64::kiwisolver-1.4.8-py310h6a678d5_0
+  krb5               pkgs/main/linux-64::krb5-1.20.1-h143b758_1
+  lcms2              pkgs/main/linux-64::lcms2-2.16-hb9589c4_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.40-h12ee557_0
+  lerc               pkgs/main/linux-64::lerc-4.0.0-h6a678d5_0
+  libabseil          pkgs/main/linux-64::libabseil-20250127.0-cxx17_h6a678d5_0
+  libboost           pkgs/main/linux-64::libboost-1.82.0-h109eef0_2
+  libbrotlicommon    pkgs/main/linux-64::libbrotlicommon-1.0.9-h5eee18b_9
+  libbrotlidec       pkgs/main/linux-64::libbrotlidec-1.0.9-h5eee18b_9
+  libbrotlienc       pkgs/main/linux-64::libbrotlienc-1.0.9-h5eee18b_9
+  libcups            pkgs/main/linux-64::libcups-2.4.2-h2d74bed_1
+  libcurl            pkgs/main/linux-64::libcurl-8.12.1-hc9e6f67_0
+  libdeflate         pkgs/main/linux-64::libdeflate-1.22-h5eee18b_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20230828-h5eee18b_0
+  libev              pkgs/main/linux-64::libev-4.33-h7f8727e_1
+  libevent           pkgs/main/linux-64::libevent-2.1.12-hdbd6064_1
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_1
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgfortran-ng     pkgs/main/linux-64::libgfortran-ng-11.2.0-h00389a5_1
+  libgfortran5       pkgs/main/linux-64::libgfortran5-11.2.0-h1234567_1
+  libglib            pkgs/main/linux-64::libglib-2.78.4-hdc74915_0
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libgrpc            pkgs/main/linux-64::libgrpc-1.71.0-h2d74bed_0
+  libiconv           pkgs/main/linux-64::libiconv-1.16-h5eee18b_3
+  libnghttp2         pkgs/main/linux-64::libnghttp2-1.57.0-h2d74bed_0
+  libpng             pkgs/main/linux-64::libpng-1.6.39-h5eee18b_0
+  libpq              pkgs/main/linux-64::libpq-17.4-hdbd6064_0
+  libprotobuf        pkgs/main/linux-64::libprotobuf-5.29.3-h3cdef7c_1
+  libre2-11          pkgs/main/linux-64::libre2-11-2024.07.02-h6a678d5_0
+  libssh2            pkgs/main/linux-64::libssh2-1.11.1-h251f7ec_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  libthrift          pkgs/main/linux-64::libthrift-0.15.0-h1795dd8_2
+  libtiff            pkgs/main/linux-64::libtiff-4.5.1-hffd6297_1
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0
+  libwebp-base       pkgs/main/linux-64::libwebp-base-1.3.2-h5eee18b_1
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0
+  libxkbcommon       pkgs/main/linux-64::libxkbcommon-1.9.1-h69220b7_0
+  libxml2            pkgs/main/linux-64::libxml2-2.13.8-hfdd30dd_0
+  lz4-c              pkgs/main/linux-64::lz4-c-1.9.4-h6a678d5_1
+  markdown-it-py     pkgs/main/linux-64::markdown-it-py-2.2.0-py310h06a4308_1
+  markupsafe         pkgs/main/linux-64::markupsafe-3.0.2-py310h5eee18b_0
+  matplotlib         pkgs/main/linux-64::matplotlib-3.9.2-py310h06a4308_1
+  matplotlib-base    pkgs/main/linux-64::matplotlib-base-3.9.2-py310hbfdbfaf_1
+  mdurl              pkgs/main/linux-64::mdurl-0.1.0-py310h06a4308_0
+  mkl                pkgs/main/linux-64::mkl-2023.1.0-h213fc3f_46344
+  mkl-service        pkgs/main/linux-64::mkl-service-2.4.0-py310h5eee18b_2
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.3.11-py310h5eee18b_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.2.8-py310h1128e8f_0
+  mysql              pkgs/main/linux-64::mysql-8.4.0-h721767e_2
+  narwhals           pkgs/main/linux-64::narwhals-1.31.0-py310h06a4308_1
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0
+  numexpr            pkgs/main/linux-64::numexpr-2.10.1-py310h3c60e43_0
+  numpy              pkgs/main/linux-64::numpy-1.26.4-py310h5f9d8c6_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.26.4-py310hb5e798b_0
+  openjpeg           pkgs/main/linux-64::openjpeg-2.5.2-he7f1fd0_0
+  openldap           pkgs/main/linux-64::openldap-2.6.4-h42fbc30_0
+  openssl            pkgs/main/linux-64::openssl-3.0.16-h5eee18b_0
+  orc                pkgs/main/linux-64::orc-2.1.1-hd396ef6_0
+  packaging          pkgs/main/linux-64::packaging-24.2-py310h06a4308_0
+  pandas             pkgs/main/linux-64::pandas-2.2.3-py310h6a678d5_0
+  pcre2              pkgs/main/linux-64::pcre2-10.42-hebb0a14_1
+  pillow             pkgs/main/linux-64::pillow-10.4.0-py310h5eee18b_0
+  pip                pkgs/main/noarch::pip-25.1-pyhc872135_2
+  plotly             pkgs/main/linux-64::plotly-5.24.1-py310h2f386ee_1
+  protobuf           pkgs/main/linux-64::protobuf-5.29.3-py310he621ea3_0
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h0ce48e5_1
+  pyarrow            pkgs/main/linux-64::pyarrow-19.0.0-py310h6a678d5_1
+  pydeck             pkgs/main/linux-64::pydeck-0.9.1-py310h06a4308_0
+  pygments           pkgs/main/linux-64::pygments-2.19.1-py310h06a4308_0
+  pyparsing          pkgs/main/linux-64::pyparsing-3.2.0-py310h06a4308_0
+  pyqt               pkgs/main/linux-64::pyqt-6.7.1-py310h6a678d5_1
+  pyqt6-sip          pkgs/main/linux-64::pyqt6-sip-13.9.1-py310h5eee18b_1
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py310h06a4308_0
+  python             pkgs/main/linux-64::python-3.10.18-h1a3bd86_0
+  python-dateutil    pkgs/main/linux-64::python-dateutil-2.9.0post0-py310h06a4308_2
+  python-tzdata      pkgs/main/noarch::python-tzdata-2025.2-pyhd3eb1b0_0
+  pytz               pkgs/main/linux-64::pytz-2024.1-py310h06a4308_0
+  pyyaml             pkgs/main/linux-64::pyyaml-6.0.2-py310h5eee18b_0
+  qtbase             pkgs/main/linux-64::qtbase-6.7.3-hdaa5aa8_0
+  qtdeclarative      pkgs/main/linux-64::qtdeclarative-6.7.3-h6a678d5_0
+  qtsvg              pkgs/main/linux-64::qtsvg-6.7.3-he621ea3_0
+  qttools            pkgs/main/linux-64::qttools-6.7.3-h80c7b02_0
+  qtwebchannel       pkgs/main/linux-64::qtwebchannel-6.7.3-h6a678d5_0
+  qtwebsockets       pkgs/main/linux-64::qtwebsockets-6.7.3-h6a678d5_0
+  re2                pkgs/main/linux-64::re2-2024.07.02-hdb19cb5_0
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0
+  referencing        pkgs/main/linux-64::referencing-0.30.2-py310h06a4308_0
+  requests           pkgs/main/linux-64::requests-2.32.3-py310h06a4308_1
+  rich               pkgs/main/linux-64::rich-13.9.4-py310h06a4308_0
+  rpds-py            pkgs/main/linux-64::rpds-py-0.22.3-py310h4aa5aa6_0
+  s2n                pkgs/main/linux-64::s2n-1.3.27-hdbd6064_0
+  scikit-learn       pkgs/main/linux-64::scikit-learn-1.5.2-py310h6a678d5_0
+  scipy              pkgs/main/linux-64::scipy-1.15.3-py310h525edd1_0
+  seaborn            pkgs/main/linux-64::seaborn-0.13.2-py310h06a4308_3
+  setuptools         pkgs/main/linux-64::setuptools-78.1.1-py310h06a4308_0
+  sip                pkgs/main/linux-64::sip-6.10.0-py310h6a678d5_0
+  six                pkgs/main/linux-64::six-1.17.0-py310h06a4308_0
+  smmap              pkgs/main/noarch::smmap-4.0.0-pyhd3eb1b0_0
+  snappy             pkgs/main/linux-64::snappy-1.2.1-h6a678d5_0
+  sqlite             pkgs/main/linux-64::sqlite-3.45.3-h5eee18b_0
+  streamlit          pkgs/main/linux-64::streamlit-1.39.0-py312h06a4308_0
+  tbb                pkgs/main/linux-64::tbb-2021.8.0-hdb19cb5_0
+  tenacity           pkgs/main/linux-64::tenacity-9.0.0-py310h06a4308_0
+  threadpoolctl      pkgs/main/linux-64::threadpoolctl-3.5.0-py310h2f386ee_0
+  tk                 pkgs/main/linux-64::tk-8.6.14-h993c535_1
+  toml               pkgs/main/noarch::toml-0.10.2-pyhd3eb1b0_0
+  tomli              pkgs/main/linux-64::tomli-2.0.1-py310h06a4308_0
+  tornado            pkgs/main/linux-64::tornado-6.5.1-py310h5eee18b_0
+  typing-extensions  pkgs/main/linux-64::typing-extensions-4.12.2-py310h06a4308_0
+  typing_extensions  pkgs/main/linux-64::typing_extensions-4.12.2-py310h06a4308_0
+  tzdata             pkgs/main/noarch::tzdata-2025b-h04d1e81_0
+  unicodedata2       pkgs/main/linux-64::unicodedata2-15.1.0-py310h5eee18b_1
+  urllib3            pkgs/main/linux-64::urllib3-2.3.0-py310h06a4308_0
+  utf8proc           pkgs/main/linux-64::utf8proc-2.6.1-h5eee18b_1
+  watchdog           pkgs/main/linux-64::watchdog-4.0.2-py310h06a4308_0
+  wheel              pkgs/main/linux-64::wheel-0.45.1-py310h06a4308_0
+  xcb-util           pkgs/main/linux-64::xcb-util-0.4.1-h5eee18b_2
+  xcb-util-cursor    pkgs/main/linux-64::xcb-util-cursor-0.1.5-h5eee18b_0
+  xcb-util-image     pkgs/main/linux-64::xcb-util-image-0.4.0-h5eee18b_2
+  xcb-util-renderut~ pkgs/main/linux-64::xcb-util-renderutil-0.3.10-h5eee18b_0
+  xkeyboard-config   pkgs/main/linux-64::xkeyboard-config-2.44-h5eee18b_0
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.12-h9b100fa_1
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2024.1-h5eee18b_1
+  xz                 pkgs/main/linux-64::xz-5.6.4-h5eee18b_1
+  yaml               pkgs/main/linux-64::yaml-0.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_1
+  zstd               pkgs/main/linux-64::zstd-1.5.6-hc292b87_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate my_dbt
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ pip install dbt-duckdb
+Collecting dbt-duckdb
+  Downloading dbt_duckdb-1.9.3-py3-none-any.whl (70 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.0/70.0 kB 2.5 MB/s eta 0:00:00
+Collecting dbt-adapters<2,>=1
+  Downloading dbt_adapters-1.16.0-py3-none-any.whl (166 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.6/166.6 kB 2.8 MB/s eta 0:00:00
+Collecting duckdb>=1.0.0
+  Downloading duckdb-1.3.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (21.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 10.7 MB/s eta 0:00:00
+Collecting dbt-core>=1.8.0
+  Downloading dbt_core-1.10.1-py3-none-any.whl (972 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 972.9/972.9 kB 10.3 MB/s eta 0:00:00
+Collecting dbt-common<2,>=1
+  Downloading dbt_common-1.25.0-py3-none-any.whl (85 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.0/86.0 kB 6.5 MB/s eta 0:00:00
+Collecting agate<2.0,>=1.0
+  Downloading agate-1.13.0-py2.py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.9/95.9 kB 6.4 MB/s eta 0:00:00
+Requirement already satisfied: pytz>=2015.7 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-adapters<2,>=1->dbt-duckdb) (2022.7)
+Collecting mashumaro[msgpack]<3.15,>=3.9
+  Downloading mashumaro-3.14-py3-none-any.whl (92 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.2/92.2 kB 8.0 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions<5.0,>=4.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-adapters<2,>=1->dbt-duckdb) (4.4.0)
+Collecting dbt-protos<2.0,>=1.0.291
+  Downloading dbt_protos-1.0.330-py3-none-any.whl (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.1/91.1 kB 6.6 MB/s eta 0:00:00
+Collecting protobuf<6.0,>=5.0
+  Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.9/319.9 kB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: pathspec<0.13,>=0.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (0.10.3)
+Requirement already satisfied: python-dateutil<3.0,>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (2.8.2)
+Collecting isodate<0.7,>=0.6
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 4.1 MB/s eta 0:00:00
+Collecting jinja2<4,>=3.1.3
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 7.5 MB/s eta 0:00:00
+Requirement already satisfied: jsonschema<5.0,>=4.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (4.17.3)
+Requirement already satisfied: colorama<0.5,>=0.3.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (0.4.6)
+Collecting deepdiff<8.0,>=7.0
+  Downloading deepdiff-7.0.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.8/80.8 kB 5.9 MB/s eta 0:00:00
+Collecting agate<2.0,>=1.0
+  Downloading agate-1.9.1-py2.py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.1/95.1 kB 8.4 MB/s eta 0:00:00
+Requirement already satisfied: requests<3.0.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (2.28.1)
+Collecting pydantic<2
+  Downloading pydantic-1.10.22-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 10.6 MB/s eta 0:00:00
+Requirement already satisfied: click<9.0,>=8.0.2 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (8.0.4)
+Collecting dbt-extractor<=0.6,>=0.5.0
+  Downloading dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 442.7/442.7 kB 9.3 MB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=6.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (6.0)
+Collecting snowplow-tracker<2.0,>=1.0.2
+  Downloading snowplow_tracker-1.1.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.1/44.1 kB 5.0 MB/s eta 0:00:00
+Requirement already satisfied: networkx<4.0,>=2.3 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (2.8.4)
+Collecting dbt-semantic-interfaces<0.9,>=0.8.3
+  Downloading dbt_semantic_interfaces-0.8.4-py3-none-any.whl (146 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.6/146.6 kB 7.4 MB/s eta 0:00:00
+Collecting sqlparse<0.6.0,>=0.5.0
+  Downloading sqlparse-0.5.3-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.4/44.4 kB 4.1 MB/s eta 0:00:00
+Requirement already satisfied: packaging>20.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (22.0)
+Collecting daff>=1.3.46
+  Downloading daff-1.4.2-py3-none-any.whl (144 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.9/144.9 kB 8.7 MB/s eta 0:00:00
+Collecting jsonschema<5.0,>=4.0
+  Downloading jsonschema-4.24.0-py3-none-any.whl (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.7/88.7 kB 7.1 MB/s eta 0:00:00
+Collecting parsedatetime!=2.5,>=2.1
+  Downloading parsedatetime-2.6-py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.5/42.5 kB 3.7 MB/s eta 0:00:00
+Collecting pytimeparse>=1.1.5
+  Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+Requirement already satisfied: Babel>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (2.11.0)
+Requirement already satisfied: python-slugify>=1.2.1 in /home/user/anaconda3/lib/python3.10/site-packages (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (5.0.2)
+Collecting leather>=0.3.2
+  Downloading leather-0.4.0-py2.py3-none-any.whl (30 kB)
+Collecting more-itertools<11.0,>=8.0
+  Downloading more_itertools-10.7.0-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.3/65.3 kB 4.8 MB/s eta 0:00:00
+Collecting importlib-metadata<9,>=6.0
+  Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+Collecting ordered-set<4.2.0,>=4.1.0
+  Downloading ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: six in /home/user/anaconda3/lib/python3.10/site-packages (from isodate<0.7,>=0.6->dbt-common<2,>=1->dbt-duckdb) (1.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from jinja2<4,>=3.1.3->dbt-common<2,>=1->dbt-duckdb) (2.1.1)
+Collecting attrs>=22.2.0
+  Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 7.0 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4
+  Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+Collecting rpds-py>=0.7.1
+  Downloading rpds_py-0.25.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (386 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 387.0/387.0 kB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: msgpack>=0.5.6 in /home/user/anaconda3/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-adapters<2,>=1->dbt-duckdb) (1.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (2022.12.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (1.26.14)
+Requirement already satisfied: charset-normalizer<3,>=2 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (2.0.4)
+Collecting zipp>=3.20
+  Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+Requirement already satisfied: text-unidecode>=1.3 in /home/user/anaconda3/lib/python3.10/site-packages (from python-slugify>=1.2.1->agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (1.3)
+Installing collected packages: pytimeparse, parsedatetime, leather, daff, zipp, sqlparse, rpds-py, pydantic, protobuf, ordered-set, more-itertools, mashumaro, jinja2, isodate, duckdb, dbt-extractor, attrs, snowplow-tracker, referencing, importlib-metadata, deepdiff, dbt-protos, agate, jsonschema-specifications, jsonschema, dbt-semantic-interfaces, dbt-common, dbt-adapters, dbt-core, dbt-duckdb
+  Attempting uninstall: zipp
+    Found existing installation: zipp 3.11.0
+    Uninstalling zipp-3.11.0:
+      Successfully uninstalled zipp-3.11.0
+  Attempting uninstall: jinja2
+    Found existing installation: Jinja2 3.1.2
+    Uninstalling Jinja2-3.1.2:
+      Successfully uninstalled Jinja2-3.1.2
+  Attempting uninstall: attrs
+    Found existing installation: attrs 22.1.0
+    Uninstalling attrs-22.1.0:
+      Successfully uninstalled attrs-22.1.0
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib-metadata 4.11.3
+    Uninstalling importlib-metadata-4.11.3:
+      Successfully uninstalled importlib-metadata-4.11.3
+  Attempting uninstall: jsonschema
+    Found existing installation: jsonschema 4.17.3
+    Uninstalling jsonschema-4.17.3:
+      Successfully uninstalled jsonschema-4.17.3
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 5.4.1 requires pyqt5<5.16, which is not installed.
+spyder 5.4.1 requires pyqtwebengine<5.16, which is not installed.
+conda-repo-cli 1.0.41 requires requests_mock, which is not installed.
+conda-repo-cli 1.0.41 requires clyent==1.2.1, but you have clyent 1.2.2 which is incompatible.
+conda-repo-cli 1.0.41 requires nbformat==5.4.0, but you have nbformat 5.7.0 which is incompatible.
+Successfully installed agate-1.9.1 attrs-25.3.0 daff-1.4.2 dbt-adapters-1.16.0 dbt-common-1.25.0 dbt-core-1.10.1 dbt-duckdb-1.9.3 dbt-extractor-0.6.0 dbt-protos-1.0.330 dbt-semantic-interfaces-0.8.4 deepdiff-7.0.1 duckdb-1.3.1 importlib-metadata-8.7.0 isodate-0.6.1 jinja2-3.1.6 jsonschema-4.24.0 jsonschema-specifications-2025.4.1 leather-0.4.0 mashumaro-3.14 more-itertools-10.7.0 ordered-set-4.1.0 parsedatetime-2.6 protobuf-5.29.5 pydantic-1.10.22 pytimeparse-1.1.8 referencing-0.36.2 rpds-py-0.25.1 snowplow-tracker-1.1.0 sqlparse-0.5.3 zipp-3.23.0
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ dbt
+Usage: dbt [OPTIONS] COMMAND [ARGS]...
+
+  An ELT tool for managing your SQL transformations and data models. For more
+  documentation on these commands, visit: docs.getdbt.com
+
+Options:
+  --cache-selected-only / --no-cache-selected-only
+                                  At start of run, populate relational cache
+                                  only for schemas containing selected nodes,
+                                  or for all schemas of interest.
+  -d, --debug / --no-debug        Display debug logging during dbt execution.
+                                  Useful for debugging and making bug reports.
+  --defer / --no-defer            If set, resolve unselected nodes by
+                                  deferring to the manifest within the --state
+                                  directory.
+  --defer-state DIRECTORY         Override the state directory for deferral
+                                  only.
+  --deprecated-favor-state TEXT   Internal flag for deprecating old env var.
+  -x, --fail-fast / --no-fail-fast
+                                  Stop execution on first failure.
+  --favor-state / --no-favor-state
+                                  If set, defer to the argument provided to
+                                  the state flag for resolving unselected
+                                  nodes, even if the node(s) exist as a
+                                  database object in the current environment.
+  --indirect-selection [eager|cautious|buildable|empty]
+                                  Choose which tests to select that are
+                                  adjacent to selected resources. Eager is
+                                  most inclusive, cautious is most exclusive,
+                                  and buildable is in between. Empty includes
+                                  no tests at all.
+  --log-cache-events / --no-log-cache-events
+                                  Enable verbose logging for relational cache
+                                  events to help when debugging.
+  --log-format [text|debug|json|default]
+                                  Specify the format of logging to the console
+                                  and the log file. Use --log-format-file to
+                                  configure the format for the log file
+                                  differently than the console.
+  --log-format-file [text|debug|json|default]
+                                  Specify the format of logging to the log
+                                  file by overriding the default value and the
+                                  general --log-format setting.
+  --log-level [debug|info|warn|error|none]
+                                  Specify the minimum severity of events that
+                                  are logged to the console and the log file.
+                                  Use --log-level-file to configure the
+                                  severity for the log file differently than
+                                  the console.
+  --log-level-file [debug|info|warn|error|none]
+                                  Specify the minimum severity of events that
+                                  are logged to the log file by overriding the
+                                  default value and the general --log-level
+                                  setting.
+  --log-path PATH                 Configure the 'log-path'. Only applies this
+                                  setting for the current run. Overrides the
+                                  'DBT_LOG_PATH' if it is set.
+  --partial-parse / --no-partial-parse
+                                  Allow for partial parsing by looking for and
+                                  writing to a pickle file in the target
+                                  directory. This overrides the user
+                                  configuration file.
+  --populate-cache / --no-populate-cache
+                                  At start of run, use `show` or
+                                  `information_schema` queries to populate a
+                                  relational cache, which can speed up
+                                  subsequent materializations.
+  --print / --no-print            Output all {{ print() }} macro calls.
+  --printer-width INTEGER         Sets the width of terminal output
+  --profile TEXT                  Which existing profile to load. Overrides
+                                  setting in dbt_project.yml.
+  -q, --quiet / --no-quiet        Suppress all non-error logging to stdout.
+                                  Does not affect {{ print() }} macro calls.
+  -r, --record-timing-info PATH   When this option is passed, dbt will output
+                                  low-level timing stats to the specified
+                                  file. Example: `--record-timing-info
+                                  output.profile`
+  --send-anonymous-usage-stats / --no-send-anonymous-usage-stats
+                                  Send anonymous usage stats to dbt Labs.
+  --show-all-deprecations / --no-show-all-deprecations
+                                  By default, each type of a deprecation
+                                  warning is only shown once. Use this flag to
+                                  show all deprecation warning instances.
+  --state DIRECTORY               Unless overridden, use this state directory
+                                  for both state comparison and deferral.
+  --static-parser / --no-static-parser
+                                  Use the static parser.
+  -t, --target TEXT               Which target to load for the given profile
+  --use-colors / --no-use-colors  Specify whether log output is colorized in
+                                  the console and the log file. Use --use-
+                                  colors-file/--no-use-colors-file to colorize
+                                  the log file differently than the console.
+  --use-colors-file / --no-use-colors-file
+                                  Specify whether log file output is colorized
+                                  by overriding the default value and the
+                                  general --use-colors/--no-use-colors
+                                  setting.
+  --use-experimental-parser / --no-use-experimental-parser
+                                  Enable experimental parsing features.
+  -V, -v, --version               Show version information and exit
+  --version-check / --no-version-check
+                                  If set, ensure the installed dbt version
+                                  matches the require-dbt-version specified in
+                                  the dbt_project.yml file (if any).
+                                  Otherwise, allow them to differ.
+  --warn-error                    If dbt would normally warn, instead raise an
+                                  exception. Examples include --select that
+                                  selects nothing, deprecations,
+                                  configurations with no associated models,
+                                  invalid test configurations, and missing
+                                  sources/refs in tests.
+  --warn-error-options WARNERROROPTIONSTYPE
+                                  If dbt would normally warn, instead raise an
+                                  exception based on error/warn configuration.
+                                  Examples include --select that selects
+                                  nothing, deprecations, configurations with
+                                  no associated models, invalid test
+                                  configurations, and missing sources/refs in
+                                  tests. This argument should be a YAML
+                                  string, with keys 'error' or 'warn'. eg.
+                                  '{"error": "all", "warn":
+                                  ["NoNodesForSelectionCriteria"]}'
+  --write-json / --no-write-json  Whether or not to write the manifest.json
+                                  and run_results.json files to the target
+                                  directory
+  --upload-to-artifacts-ingest-api / --no-upload-to-artifacts-ingest-api
+                                  Whether or not to upload the artifacts to
+                                  the dbt Cloud API
+  -h, --help                      Show this message and exit.
+
+Commands:
+  build          Run all seeds, models, snapshots, and tests in DAG order
+  clean          Delete all folders in the clean-targets list (usually...
+  clone          Create clones of selected nodes based on their location...
+  compile        Generates executable SQL from source, model, test, and...
+  debug          Show information on the current dbt environment and...
+  deps           Install dbt packages specified.
+  docs           Generate or serve the documentation website for your...
+  init           Initialize a new dbt project.
+  list           List the resources in your project
+  parse          Parses the project and provides information on performance
+  retry          Retry the nodes that failed in the previous run.
+  run            Compile SQL and execute against the current target...
+  run-operation  Run the named macro with any supplied arguments.
+  seed           Load data from csv files into your data warehouse.
+  show           Generates executable SQL for a named resource or inline...
+  snapshot       Execute snapshots defined in your project
+  source         Manage your project's sources
+  test           Runs tests on data in deployed models.
+
+  Specify one of these sub-commands and you can find more help from there.
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ dbt init my_project
+10:42:43  Running with dbt=1.10.1
+10:42:43  Creating dbt configuration folder at /home/user/.dbt
+10:42:43
+Your new dbt project "my_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+10:42:43  Setting up your profile.
+Which database would you like to use?
+[1] duckdb
+
+(Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
+
+Enter a number: 1
+10:42:50  Profile my_project written to /home/user/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ ls
+logs  my_project  requirements.txt
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cd my_project/
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls
+README.md  analyses  dbt_project.yml  macros  models  seeds  snapshots  tests
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat dbt_project.yml
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'my_project'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'my_project'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  my_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ bt debug
+bt: command not found
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt debug
+10:43:41  Running with dbt=1.10.1
+10:43:41  dbt version: 1.10.1
+10:43:41  python version: 3.10.9
+10:43:41  python path: /home/user/anaconda3/bin/python
+10:43:41  os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+10:43:41  Using profiles dir at /home/user/.dbt
+10:43:41  Using profiles.yml file at /home/user/.dbt/profiles.yml
+10:43:41  Using dbt_project.yml file at /home/user/anaconda3/envs/dbt/my_project/dbt_project.yml
+10:43:41  adapter type: duckdb
+10:43:41  adapter version: 1.9.3
+10:43:41  Configuration:
+10:43:41    profiles.yml file [OK found and valid]
+10:43:41    dbt_project.yml file [OK found and valid]
+10:43:41  Required dependencies:
+10:43:41   - git [OK found]
+
+10:43:41  Connection:
+10:43:41    database: dev
+10:43:41    schema: main
+10:43:41    path: dev.duckdb
+10:43:41    config_options: None
+10:43:41    extensions: None
+10:43:41    settings: {}
+10:43:41    external_root: .
+10:43:41    use_credential_provider: None
+10:43:41    attach: None
+10:43:41    filesystems: None
+10:43:41    remote: None
+10:43:41    plugins: None
+10:43:41    disable_transactions: False
+10:43:41  Registered adapter: duckdb=1.9.3
+10:43:41    Connection test: [OK connection ok]
+
+10:43:41  All checks passed!
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls
+README.md  analyses  dbt_project.yml  dev.duckdb  logs  macros  models  seeds  snapshots  tests
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls models/
+example
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls models/example/
+my_first_dbt_model.sql  my_second_dbt_model.sql  schema.yml
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat models/example.sql
+cat: models/example.sql: No such file or directory
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat > models/example.sql
+-- models/example.sql
+select 1 as id, 'hello' as message
+^C
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt run
+10:44:48  Running with dbt=1.10.1
+10:44:48  Registered adapter: duckdb=1.9.3
+10:44:48  Unable to do partial parsing because saved manifest not found. Starting full parse.
+10:44:49  Found 3 models, 4 data tests, 428 macros
+10:44:49
+10:44:49  Concurrency: 1 threads (target='dev')
+10:44:49
+10:44:50  1 of 3 START sql view model main.example ....................................... [RUN]
+10:44:50  1 of 3 OK created sql view model main.example .................................. [OK in 0.08s]
+10:44:50  2 of 3 START sql table model main.my_first_dbt_model ........................... [RUN]
+10:44:50  2 of 3 OK created sql table model main.my_first_dbt_model ...................... [OK in 0.05s]
+10:44:50  3 of 3 START sql view model main.my_second_dbt_model ........................... [RUN]
+10:44:50  3 of 3 OK created sql view model main.my_second_dbt_model ...................... [OK in 0.08s]
+10:44:50
+10:44:50  Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.32 seconds (0.32s).
+10:44:50
+10:44:50  Completed successfully
+10:44:50
+10:44:50  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt docs generate
+10:45:17  Running with dbt=1.10.1
+10:45:17  Registered adapter: duckdb=1.9.3
+10:45:17  Found 3 models, 4 data tests, 428 macros
+10:45:17
+10:45:17  Concurrency: 1 threads (target='dev')
+10:45:17
+10:45:18  Building catalog
+10:45:18  Catalog written to /home/user/anaconda3/envs/dbt/my_project/target/catalog.json
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt docs serve
+10:45:29  Running with dbt=1.10.1
+Serving docs at 8080
+To access from your browser, navigate to: http://localhost:8080
+
+
+
+Press Ctrl+C to exit.
+tcgetpgrp failed: Not a tty
+127.0.0.1 - - [19/Jun/2025 19:45:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /$%7Brequire('./assets/favicons/favicon.ico')%7D HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /manifest.json?cb=1750329932120 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /catalog.json?cb=1750329932120 HTTP/1.1" 200 -
+^C11:00:58  Encountered an error:
+
+11:00:58  Traceback (most recent call last):
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 254, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 285, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/home/user/anaconda3/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/home/user/anaconda3/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+^C
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$ sed 's/nishi/user/' dbt_execute.txt
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ conda create -n my_dbt python=3.10 --file requirements.txt
+
+CondaFileIOError: 'requirements.txt'. [Errno 2] No such file or directory: 'requirements.txt'
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cp -ip ../
+.conda_envs_dir_test  dbt/                  my_env/               stremlit_env/
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cp -ip ../stremlit_env/requirements.txt ./
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ conda create -n my_dbt python=3.10 --file requirements.txt
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.3.1
+  latest version: 25.5.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=25.5.1
+
+
+
+## Package Plan ##
+
+  environment location: /home/user/anaconda3/envs/my_dbt
+
+  added / updated specs:
+    - matplotlib==3.9.2
+    - numpy==1.26.4
+    - pandas==2.2.3
+    - plotly==5.24.1
+    - python=3.10
+    - scikit-learn==1.5.2
+    - seaborn==0.13.2
+    - streamlit==1.39.0
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  altair             pkgs/main/linux-64::altair-5.5.0-py310h06a4308_0
+  arrow-cpp          pkgs/main/linux-64::arrow-cpp-19.0.0-h865e1df_2
+  attrs              pkgs/main/linux-64::attrs-24.3.0-py310h06a4308_0
+  aws-c-auth         pkgs/main/linux-64::aws-c-auth-0.6.19-h5eee18b_0
+  aws-c-cal          pkgs/main/linux-64::aws-c-cal-0.5.20-hdbd6064_0
+  aws-c-common       pkgs/main/linux-64::aws-c-common-0.8.5-h5eee18b_0
+  aws-c-compression  pkgs/main/linux-64::aws-c-compression-0.2.16-h5eee18b_0
+  aws-c-event-stream pkgs/main/linux-64::aws-c-event-stream-0.2.15-h6a678d5_0
+  aws-c-http         pkgs/main/linux-64::aws-c-http-0.6.25-h5eee18b_0
+  aws-c-io           pkgs/main/linux-64::aws-c-io-0.13.10-h5eee18b_0
+  aws-c-mqtt         pkgs/main/linux-64::aws-c-mqtt-0.7.13-h5eee18b_0
+  aws-c-s3           pkgs/main/linux-64::aws-c-s3-0.1.51-hdbd6064_0
+  aws-c-sdkutils     pkgs/main/linux-64::aws-c-sdkutils-0.1.6-h5eee18b_0
+  aws-checksums      pkgs/main/linux-64::aws-checksums-0.1.13-h5eee18b_0
+  aws-crt-cpp        pkgs/main/linux-64::aws-crt-cpp-0.18.16-h6a678d5_0
+  aws-sdk-cpp        pkgs/main/linux-64::aws-sdk-cpp-1.11.212-hecad206_0
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  blinker            pkgs/main/linux-64::blinker-1.9.0-py310h06a4308_0
+  boost-cpp          pkgs/main/linux-64::boost-cpp-1.82.0-hdb19cb5_2
+  bottleneck         pkgs/main/linux-64::bottleneck-1.4.2-py310ha9d4c09_0
+  brotli-python      pkgs/main/linux-64::brotli-python-1.0.9-py310h6a678d5_9
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6
+  c-ares             pkgs/main/linux-64::c-ares-1.19.1-h5eee18b_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2025.2.25-h06a4308_0
+  cachetools         pkgs/main/linux-64::cachetools-5.5.1-py310h06a4308_0
+  certifi            pkgs/main/linux-64::certifi-2025.4.26-py310h06a4308_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  click              pkgs/main/linux-64::click-8.1.8-py310h06a4308_0
+  contourpy          pkgs/main/linux-64::contourpy-1.3.1-py310hdb19cb5_0
+  cycler             pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  cyrus-sasl         pkgs/main/linux-64::cyrus-sasl-2.1.28-h52b45da_1
+  expat              pkgs/main/linux-64::expat-2.7.1-h6a678d5_0
+  fontconfig         pkgs/main/linux-64::fontconfig-2.14.1-h55d465d_3
+  fonttools          pkgs/main/linux-64::fonttools-4.55.3-py310h5eee18b_0
+  freetype           pkgs/main/linux-64::freetype-2.13.3-h4a9f257_0
+  gflags             pkgs/main/linux-64::gflags-2.2.2-h6a678d5_1
+  gitdb              pkgs/main/noarch::gitdb-4.0.7-pyhd3eb1b0_0
+  gitpython          pkgs/main/linux-64::gitpython-3.1.43-py310h06a4308_0
+  glog               pkgs/main/linux-64::glog-0.5.0-h6a678d5_1
+  icu                pkgs/main/linux-64::icu-73.1-h6a678d5_0
+  idna               pkgs/main/linux-64::idna-3.7-py310h06a4308_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2023.1.0-hdb19cb5_46306
+  jinja2             pkgs/main/linux-64::jinja2-3.1.6-py310h06a4308_0
+  joblib             pkgs/main/linux-64::joblib-1.4.2-py310h06a4308_0
+  jpeg               pkgs/main/linux-64::jpeg-9e-h5eee18b_3
+  jsonschema         pkgs/main/linux-64::jsonschema-4.23.0-py310h06a4308_0
+  jsonschema-specif~ pkgs/main/linux-64::jsonschema-specifications-2023.7.1-py310h06a4308_0
+  kiwisolver         pkgs/main/linux-64::kiwisolver-1.4.8-py310h6a678d5_0
+  krb5               pkgs/main/linux-64::krb5-1.20.1-h143b758_1
+  lcms2              pkgs/main/linux-64::lcms2-2.16-hb9589c4_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.40-h12ee557_0
+  lerc               pkgs/main/linux-64::lerc-4.0.0-h6a678d5_0
+  libabseil          pkgs/main/linux-64::libabseil-20250127.0-cxx17_h6a678d5_0
+  libboost           pkgs/main/linux-64::libboost-1.82.0-h109eef0_2
+  libbrotlicommon    pkgs/main/linux-64::libbrotlicommon-1.0.9-h5eee18b_9
+  libbrotlidec       pkgs/main/linux-64::libbrotlidec-1.0.9-h5eee18b_9
+  libbrotlienc       pkgs/main/linux-64::libbrotlienc-1.0.9-h5eee18b_9
+  libcups            pkgs/main/linux-64::libcups-2.4.2-h2d74bed_1
+  libcurl            pkgs/main/linux-64::libcurl-8.12.1-hc9e6f67_0
+  libdeflate         pkgs/main/linux-64::libdeflate-1.22-h5eee18b_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20230828-h5eee18b_0
+  libev              pkgs/main/linux-64::libev-4.33-h7f8727e_1
+  libevent           pkgs/main/linux-64::libevent-2.1.12-hdbd6064_1
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_1
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgfortran-ng     pkgs/main/linux-64::libgfortran-ng-11.2.0-h00389a5_1
+  libgfortran5       pkgs/main/linux-64::libgfortran5-11.2.0-h1234567_1
+  libglib            pkgs/main/linux-64::libglib-2.78.4-hdc74915_0
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libgrpc            pkgs/main/linux-64::libgrpc-1.71.0-h2d74bed_0
+  libiconv           pkgs/main/linux-64::libiconv-1.16-h5eee18b_3
+  libnghttp2         pkgs/main/linux-64::libnghttp2-1.57.0-h2d74bed_0
+  libpng             pkgs/main/linux-64::libpng-1.6.39-h5eee18b_0
+  libpq              pkgs/main/linux-64::libpq-17.4-hdbd6064_0
+  libprotobuf        pkgs/main/linux-64::libprotobuf-5.29.3-h3cdef7c_1
+  libre2-11          pkgs/main/linux-64::libre2-11-2024.07.02-h6a678d5_0
+  libssh2            pkgs/main/linux-64::libssh2-1.11.1-h251f7ec_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  libthrift          pkgs/main/linux-64::libthrift-0.15.0-h1795dd8_2
+  libtiff            pkgs/main/linux-64::libtiff-4.5.1-hffd6297_1
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0
+  libwebp-base       pkgs/main/linux-64::libwebp-base-1.3.2-h5eee18b_1
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0
+  libxkbcommon       pkgs/main/linux-64::libxkbcommon-1.9.1-h69220b7_0
+  libxml2            pkgs/main/linux-64::libxml2-2.13.8-hfdd30dd_0
+  lz4-c              pkgs/main/linux-64::lz4-c-1.9.4-h6a678d5_1
+  markdown-it-py     pkgs/main/linux-64::markdown-it-py-2.2.0-py310h06a4308_1
+  markupsafe         pkgs/main/linux-64::markupsafe-3.0.2-py310h5eee18b_0
+  matplotlib         pkgs/main/linux-64::matplotlib-3.9.2-py310h06a4308_1
+  matplotlib-base    pkgs/main/linux-64::matplotlib-base-3.9.2-py310hbfdbfaf_1
+  mdurl              pkgs/main/linux-64::mdurl-0.1.0-py310h06a4308_0
+  mkl                pkgs/main/linux-64::mkl-2023.1.0-h213fc3f_46344
+  mkl-service        pkgs/main/linux-64::mkl-service-2.4.0-py310h5eee18b_2
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.3.11-py310h5eee18b_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.2.8-py310h1128e8f_0
+  mysql              pkgs/main/linux-64::mysql-8.4.0-h721767e_2
+  narwhals           pkgs/main/linux-64::narwhals-1.31.0-py310h06a4308_1
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0
+  numexpr            pkgs/main/linux-64::numexpr-2.10.1-py310h3c60e43_0
+  numpy              pkgs/main/linux-64::numpy-1.26.4-py310h5f9d8c6_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.26.4-py310hb5e798b_0
+  openjpeg           pkgs/main/linux-64::openjpeg-2.5.2-he7f1fd0_0
+  openldap           pkgs/main/linux-64::openldap-2.6.4-h42fbc30_0
+  openssl            pkgs/main/linux-64::openssl-3.0.16-h5eee18b_0
+  orc                pkgs/main/linux-64::orc-2.1.1-hd396ef6_0
+  packaging          pkgs/main/linux-64::packaging-24.2-py310h06a4308_0
+  pandas             pkgs/main/linux-64::pandas-2.2.3-py310h6a678d5_0
+  pcre2              pkgs/main/linux-64::pcre2-10.42-hebb0a14_1
+  pillow             pkgs/main/linux-64::pillow-10.4.0-py310h5eee18b_0
+  pip                pkgs/main/noarch::pip-25.1-pyhc872135_2
+  plotly             pkgs/main/linux-64::plotly-5.24.1-py310h2f386ee_1
+  protobuf           pkgs/main/linux-64::protobuf-5.29.3-py310he621ea3_0
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h0ce48e5_1
+  pyarrow            pkgs/main/linux-64::pyarrow-19.0.0-py310h6a678d5_1
+  pydeck             pkgs/main/linux-64::pydeck-0.9.1-py310h06a4308_0
+  pygments           pkgs/main/linux-64::pygments-2.19.1-py310h06a4308_0
+  pyparsing          pkgs/main/linux-64::pyparsing-3.2.0-py310h06a4308_0
+  pyqt               pkgs/main/linux-64::pyqt-6.7.1-py310h6a678d5_1
+  pyqt6-sip          pkgs/main/linux-64::pyqt6-sip-13.9.1-py310h5eee18b_1
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py310h06a4308_0
+  python             pkgs/main/linux-64::python-3.10.18-h1a3bd86_0
+  python-dateutil    pkgs/main/linux-64::python-dateutil-2.9.0post0-py310h06a4308_2
+  python-tzdata      pkgs/main/noarch::python-tzdata-2025.2-pyhd3eb1b0_0
+  pytz               pkgs/main/linux-64::pytz-2024.1-py310h06a4308_0
+  pyyaml             pkgs/main/linux-64::pyyaml-6.0.2-py310h5eee18b_0
+  qtbase             pkgs/main/linux-64::qtbase-6.7.3-hdaa5aa8_0
+  qtdeclarative      pkgs/main/linux-64::qtdeclarative-6.7.3-h6a678d5_0
+  qtsvg              pkgs/main/linux-64::qtsvg-6.7.3-he621ea3_0
+  qttools            pkgs/main/linux-64::qttools-6.7.3-h80c7b02_0
+  qtwebchannel       pkgs/main/linux-64::qtwebchannel-6.7.3-h6a678d5_0
+  qtwebsockets       pkgs/main/linux-64::qtwebsockets-6.7.3-h6a678d5_0
+  re2                pkgs/main/linux-64::re2-2024.07.02-hdb19cb5_0
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0
+  referencing        pkgs/main/linux-64::referencing-0.30.2-py310h06a4308_0
+  requests           pkgs/main/linux-64::requests-2.32.3-py310h06a4308_1
+  rich               pkgs/main/linux-64::rich-13.9.4-py310h06a4308_0
+  rpds-py            pkgs/main/linux-64::rpds-py-0.22.3-py310h4aa5aa6_0
+  s2n                pkgs/main/linux-64::s2n-1.3.27-hdbd6064_0
+  scikit-learn       pkgs/main/linux-64::scikit-learn-1.5.2-py310h6a678d5_0
+  scipy              pkgs/main/linux-64::scipy-1.15.3-py310h525edd1_0
+  seaborn            pkgs/main/linux-64::seaborn-0.13.2-py310h06a4308_3
+  setuptools         pkgs/main/linux-64::setuptools-78.1.1-py310h06a4308_0
+  sip                pkgs/main/linux-64::sip-6.10.0-py310h6a678d5_0
+  six                pkgs/main/linux-64::six-1.17.0-py310h06a4308_0
+  smmap              pkgs/main/noarch::smmap-4.0.0-pyhd3eb1b0_0
+  snappy             pkgs/main/linux-64::snappy-1.2.1-h6a678d5_0
+  sqlite             pkgs/main/linux-64::sqlite-3.45.3-h5eee18b_0
+  streamlit          pkgs/main/linux-64::streamlit-1.39.0-py312h06a4308_0
+  tbb                pkgs/main/linux-64::tbb-2021.8.0-hdb19cb5_0
+  tenacity           pkgs/main/linux-64::tenacity-9.0.0-py310h06a4308_0
+  threadpoolctl      pkgs/main/linux-64::threadpoolctl-3.5.0-py310h2f386ee_0
+  tk                 pkgs/main/linux-64::tk-8.6.14-h993c535_1
+  toml               pkgs/main/noarch::toml-0.10.2-pyhd3eb1b0_0
+  tomli              pkgs/main/linux-64::tomli-2.0.1-py310h06a4308_0
+  tornado            pkgs/main/linux-64::tornado-6.5.1-py310h5eee18b_0
+  typing-extensions  pkgs/main/linux-64::typing-extensions-4.12.2-py310h06a4308_0
+  typing_extensions  pkgs/main/linux-64::typing_extensions-4.12.2-py310h06a4308_0
+  tzdata             pkgs/main/noarch::tzdata-2025b-h04d1e81_0
+  unicodedata2       pkgs/main/linux-64::unicodedata2-15.1.0-py310h5eee18b_1
+  urllib3            pkgs/main/linux-64::urllib3-2.3.0-py310h06a4308_0
+  utf8proc           pkgs/main/linux-64::utf8proc-2.6.1-h5eee18b_1
+  watchdog           pkgs/main/linux-64::watchdog-4.0.2-py310h06a4308_0
+  wheel              pkgs/main/linux-64::wheel-0.45.1-py310h06a4308_0
+  xcb-util           pkgs/main/linux-64::xcb-util-0.4.1-h5eee18b_2
+  xcb-util-cursor    pkgs/main/linux-64::xcb-util-cursor-0.1.5-h5eee18b_0
+  xcb-util-image     pkgs/main/linux-64::xcb-util-image-0.4.0-h5eee18b_2
+  xcb-util-renderut~ pkgs/main/linux-64::xcb-util-renderutil-0.3.10-h5eee18b_0
+  xkeyboard-config   pkgs/main/linux-64::xkeyboard-config-2.44-h5eee18b_0
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.12-h9b100fa_1
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2024.1-h5eee18b_1
+  xz                 pkgs/main/linux-64::xz-5.6.4-h5eee18b_1
+  yaml               pkgs/main/linux-64::yaml-0.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_1
+  zstd               pkgs/main/linux-64::zstd-1.5.6-hc292b87_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate my_dbt
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ pip install dbt-duckdb
+Collecting dbt-duckdb
+  Downloading dbt_duckdb-1.9.3-py3-none-any.whl (70 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.0/70.0 kB 2.5 MB/s eta 0:00:00
+Collecting dbt-adapters<2,>=1
+  Downloading dbt_adapters-1.16.0-py3-none-any.whl (166 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.6/166.6 kB 2.8 MB/s eta 0:00:00
+Collecting duckdb>=1.0.0
+  Downloading duckdb-1.3.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (21.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 10.7 MB/s eta 0:00:00
+Collecting dbt-core>=1.8.0
+  Downloading dbt_core-1.10.1-py3-none-any.whl (972 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 972.9/972.9 kB 10.3 MB/s eta 0:00:00
+Collecting dbt-common<2,>=1
+  Downloading dbt_common-1.25.0-py3-none-any.whl (85 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.0/86.0 kB 6.5 MB/s eta 0:00:00
+Collecting agate<2.0,>=1.0
+  Downloading agate-1.13.0-py2.py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.9/95.9 kB 6.4 MB/s eta 0:00:00
+Requirement already satisfied: pytz>=2015.7 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-adapters<2,>=1->dbt-duckdb) (2022.7)
+Collecting mashumaro[msgpack]<3.15,>=3.9
+  Downloading mashumaro-3.14-py3-none-any.whl (92 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.2/92.2 kB 8.0 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions<5.0,>=4.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-adapters<2,>=1->dbt-duckdb) (4.4.0)
+Collecting dbt-protos<2.0,>=1.0.291
+  Downloading dbt_protos-1.0.330-py3-none-any.whl (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.1/91.1 kB 6.6 MB/s eta 0:00:00
+Collecting protobuf<6.0,>=5.0
+  Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.9/319.9 kB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: pathspec<0.13,>=0.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (0.10.3)
+Requirement already satisfied: python-dateutil<3.0,>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (2.8.2)
+Collecting isodate<0.7,>=0.6
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 4.1 MB/s eta 0:00:00
+Collecting jinja2<4,>=3.1.3
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 7.5 MB/s eta 0:00:00
+Requirement already satisfied: jsonschema<5.0,>=4.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (4.17.3)
+Requirement already satisfied: colorama<0.5,>=0.3.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (0.4.6)
+Collecting deepdiff<8.0,>=7.0
+  Downloading deepdiff-7.0.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.8/80.8 kB 5.9 MB/s eta 0:00:00
+Collecting agate<2.0,>=1.0
+  Downloading agate-1.9.1-py2.py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.1/95.1 kB 8.4 MB/s eta 0:00:00
+Requirement already satisfied: requests<3.0.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (2.28.1)
+Collecting pydantic<2
+  Downloading pydantic-1.10.22-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 10.6 MB/s eta 0:00:00
+Requirement already satisfied: click<9.0,>=8.0.2 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (8.0.4)
+Collecting dbt-extractor<=0.6,>=0.5.0
+  Downloading dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 442.7/442.7 kB 9.3 MB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=6.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (6.0)
+Collecting snowplow-tracker<2.0,>=1.0.2
+  Downloading snowplow_tracker-1.1.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.1/44.1 kB 5.0 MB/s eta 0:00:00
+Requirement already satisfied: networkx<4.0,>=2.3 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (2.8.4)
+Collecting dbt-semantic-interfaces<0.9,>=0.8.3
+  Downloading dbt_semantic_interfaces-0.8.4-py3-none-any.whl (146 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.6/146.6 kB 7.4 MB/s eta 0:00:00
+Collecting sqlparse<0.6.0,>=0.5.0
+  Downloading sqlparse-0.5.3-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.4/44.4 kB 4.1 MB/s eta 0:00:00
+Requirement already satisfied: packaging>20.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (22.0)
+Collecting daff>=1.3.46
+  Downloading daff-1.4.2-py3-none-any.whl (144 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.9/144.9 kB 8.7 MB/s eta 0:00:00
+Collecting jsonschema<5.0,>=4.0
+  Downloading jsonschema-4.24.0-py3-none-any.whl (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.7/88.7 kB 7.1 MB/s eta 0:00:00
+Collecting parsedatetime!=2.5,>=2.1
+  Downloading parsedatetime-2.6-py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.5/42.5 kB 3.7 MB/s eta 0:00:00
+Collecting pytimeparse>=1.1.5
+  Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+Requirement already satisfied: Babel>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (2.11.0)
+Requirement already satisfied: python-slugify>=1.2.1 in /home/user/anaconda3/lib/python3.10/site-packages (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (5.0.2)
+Collecting leather>=0.3.2
+  Downloading leather-0.4.0-py2.py3-none-any.whl (30 kB)
+Collecting more-itertools<11.0,>=8.0
+  Downloading more_itertools-10.7.0-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.3/65.3 kB 4.8 MB/s eta 0:00:00
+Collecting importlib-metadata<9,>=6.0
+  Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+Collecting ordered-set<4.2.0,>=4.1.0
+  Downloading ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: six in /home/user/anaconda3/lib/python3.10/site-packages (from isodate<0.7,>=0.6->dbt-common<2,>=1->dbt-duckdb) (1.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from jinja2<4,>=3.1.3->dbt-common<2,>=1->dbt-duckdb) (2.1.1)
+Collecting attrs>=22.2.0
+  Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 7.0 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4
+  Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+Collecting rpds-py>=0.7.1
+  Downloading rpds_py-0.25.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (386 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 387.0/387.0 kB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: msgpack>=0.5.6 in /home/user/anaconda3/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-adapters<2,>=1->dbt-duckdb) (1.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (2022.12.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (1.26.14)
+Requirement already satisfied: charset-normalizer<3,>=2 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (2.0.4)
+Collecting zipp>=3.20
+  Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+Requirement already satisfied: text-unidecode>=1.3 in /home/user/anaconda3/lib/python3.10/site-packages (from python-slugify>=1.2.1->agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (1.3)
+Installing collected packages: pytimeparse, parsedatetime, leather, daff, zipp, sqlparse, rpds-py, pydantic, protobuf, ordered-set, more-itertools, mashumaro, jinja2, isodate, duckdb, dbt-extractor, attrs, snowplow-tracker, referencing, importlib-metadata, deepdiff, dbt-protos, agate, jsonschema-specifications, jsonschema, dbt-semantic-interfaces, dbt-common, dbt-adapters, dbt-core, dbt-duckdb
+  Attempting uninstall: zipp
+    Found existing installation: zipp 3.11.0
+    Uninstalling zipp-3.11.0:
+      Successfully uninstalled zipp-3.11.0
+  Attempting uninstall: jinja2
+    Found existing installation: Jinja2 3.1.2
+    Uninstalling Jinja2-3.1.2:
+      Successfully uninstalled Jinja2-3.1.2
+  Attempting uninstall: attrs
+    Found existing installation: attrs 22.1.0
+    Uninstalling attrs-22.1.0:
+      Successfully uninstalled attrs-22.1.0
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib-metadata 4.11.3
+    Uninstalling importlib-metadata-4.11.3:
+      Successfully uninstalled importlib-metadata-4.11.3
+  Attempting uninstall: jsonschema
+    Found existing installation: jsonschema 4.17.3
+    Uninstalling jsonschema-4.17.3:
+      Successfully uninstalled jsonschema-4.17.3
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 5.4.1 requires pyqt5<5.16, which is not installed.
+spyder 5.4.1 requires pyqtwebengine<5.16, which is not installed.
+conda-repo-cli 1.0.41 requires requests_mock, which is not installed.
+conda-repo-cli 1.0.41 requires clyent==1.2.1, but you have clyent 1.2.2 which is incompatible.
+conda-repo-cli 1.0.41 requires nbformat==5.4.0, but you have nbformat 5.7.0 which is incompatible.
+Successfully installed agate-1.9.1 attrs-25.3.0 daff-1.4.2 dbt-adapters-1.16.0 dbt-common-1.25.0 dbt-core-1.10.1 dbt-duckdb-1.9.3 dbt-extractor-0.6.0 dbt-protos-1.0.330 dbt-semantic-interfaces-0.8.4 deepdiff-7.0.1 duckdb-1.3.1 importlib-metadata-8.7.0 isodate-0.6.1 jinja2-3.1.6 jsonschema-4.24.0 jsonschema-specifications-2025.4.1 leather-0.4.0 mashumaro-3.14 more-itertools-10.7.0 ordered-set-4.1.0 parsedatetime-2.6 protobuf-5.29.5 pydantic-1.10.22 pytimeparse-1.1.8 referencing-0.36.2 rpds-py-0.25.1 snowplow-tracker-1.1.0 sqlparse-0.5.3 zipp-3.23.0
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ dbt
+Usage: dbt [OPTIONS] COMMAND [ARGS]...
+
+  An ELT tool for managing your SQL transformations and data models. For more
+  documentation on these commands, visit: docs.getdbt.com
+
+Options:
+  --cache-selected-only / --no-cache-selected-only
+                                  At start of run, populate relational cache
+                                  only for schemas containing selected nodes,
+                                  or for all schemas of interest.
+  -d, --debug / --no-debug        Display debug logging during dbt execution.
+                                  Useful for debugging and making bug reports.
+  --defer / --no-defer            If set, resolve unselected nodes by
+                                  deferring to the manifest within the --state
+                                  directory.
+  --defer-state DIRECTORY         Override the state directory for deferral
+                                  only.
+  --deprecated-favor-state TEXT   Internal flag for deprecating old env var.
+  -x, --fail-fast / --no-fail-fast
+                                  Stop execution on first failure.
+  --favor-state / --no-favor-state
+                                  If set, defer to the argument provided to
+                                  the state flag for resolving unselected
+                                  nodes, even if the node(s) exist as a
+                                  database object in the current environment.
+  --indirect-selection [eager|cautious|buildable|empty]
+                                  Choose which tests to select that are
+                                  adjacent to selected resources. Eager is
+                                  most inclusive, cautious is most exclusive,
+                                  and buildable is in between. Empty includes
+                                  no tests at all.
+  --log-cache-events / --no-log-cache-events
+                                  Enable verbose logging for relational cache
+                                  events to help when debugging.
+  --log-format [text|debug|json|default]
+                                  Specify the format of logging to the console
+                                  and the log file. Use --log-format-file to
+                                  configure the format for the log file
+                                  differently than the console.
+  --log-format-file [text|debug|json|default]
+                                  Specify the format of logging to the log
+                                  file by overriding the default value and the
+                                  general --log-format setting.
+  --log-level [debug|info|warn|error|none]
+                                  Specify the minimum severity of events that
+                                  are logged to the console and the log file.
+                                  Use --log-level-file to configure the
+                                  severity for the log file differently than
+                                  the console.
+  --log-level-file [debug|info|warn|error|none]
+                                  Specify the minimum severity of events that
+                                  are logged to the log file by overriding the
+                                  default value and the general --log-level
+                                  setting.
+  --log-path PATH                 Configure the 'log-path'. Only applies this
+                                  setting for the current run. Overrides the
+                                  'DBT_LOG_PATH' if it is set.
+  --partial-parse / --no-partial-parse
+                                  Allow for partial parsing by looking for and
+                                  writing to a pickle file in the target
+                                  directory. This overrides the user
+                                  configuration file.
+  --populate-cache / --no-populate-cache
+                                  At start of run, use `show` or
+                                  `information_schema` queries to populate a
+                                  relational cache, which can speed up
+                                  subsequent materializations.
+  --print / --no-print            Output all {{ print() }} macro calls.
+  --printer-width INTEGER         Sets the width of terminal output
+  --profile TEXT                  Which existing profile to load. Overrides
+                                  setting in dbt_project.yml.
+  -q, --quiet / --no-quiet        Suppress all non-error logging to stdout.
+                                  Does not affect {{ print() }} macro calls.
+  -r, --record-timing-info PATH   When this option is passed, dbt will output
+                                  low-level timing stats to the specified
+                                  file. Example: `--record-timing-info
+                                  output.profile`
+  --send-anonymous-usage-stats / --no-send-anonymous-usage-stats
+                                  Send anonymous usage stats to dbt Labs.
+  --show-all-deprecations / --no-show-all-deprecations
+                                  By default, each type of a deprecation
+                                  warning is only shown once. Use this flag to
+                                  show all deprecation warning instances.
+  --state DIRECTORY               Unless overridden, use this state directory
+                                  for both state comparison and deferral.
+  --static-parser / --no-static-parser
+                                  Use the static parser.
+  -t, --target TEXT               Which target to load for the given profile
+  --use-colors / --no-use-colors  Specify whether log output is colorized in
+                                  the console and the log file. Use --use-
+                                  colors-file/--no-use-colors-file to colorize
+                                  the log file differently than the console.
+  --use-colors-file / --no-use-colors-file
+                                  Specify whether log file output is colorized
+                                  by overriding the default value and the
+                                  general --use-colors/--no-use-colors
+                                  setting.
+  --use-experimental-parser / --no-use-experimental-parser
+                                  Enable experimental parsing features.
+  -V, -v, --version               Show version information and exit
+  --version-check / --no-version-check
+                                  If set, ensure the installed dbt version
+                                  matches the require-dbt-version specified in
+                                  the dbt_project.yml file (if any).
+                                  Otherwise, allow them to differ.
+  --warn-error                    If dbt would normally warn, instead raise an
+                                  exception. Examples include --select that
+                                  selects nothing, deprecations,
+                                  configurations with no associated models,
+                                  invalid test configurations, and missing
+                                  sources/refs in tests.
+  --warn-error-options WARNERROROPTIONSTYPE
+                                  If dbt would normally warn, instead raise an
+                                  exception based on error/warn configuration.
+                                  Examples include --select that selects
+                                  nothing, deprecations, configurations with
+                                  no associated models, invalid test
+                                  configurations, and missing sources/refs in
+                                  tests. This argument should be a YAML
+                                  string, with keys 'error' or 'warn'. eg.
+                                  '{"error": "all", "warn":
+                                  ["NoNodesForSelectionCriteria"]}'
+  --write-json / --no-write-json  Whether or not to write the manifest.json
+                                  and run_results.json files to the target
+                                  directory
+  --upload-to-artifacts-ingest-api / --no-upload-to-artifacts-ingest-api
+                                  Whether or not to upload the artifacts to
+                                  the dbt Cloud API
+  -h, --help                      Show this message and exit.
+
+Commands:
+  build          Run all seeds, models, snapshots, and tests in DAG order
+  clean          Delete all folders in the clean-targets list (usually...
+  clone          Create clones of selected nodes based on their location...
+  compile        Generates executable SQL from source, model, test, and...
+  debug          Show information on the current dbt environment and...
+  deps           Install dbt packages specified.
+  docs           Generate or serve the documentation website for your...
+  init           Initialize a new dbt project.
+  list           List the resources in your project
+  parse          Parses the project and provides information on performance
+  retry          Retry the nodes that failed in the previous run.
+  run            Compile SQL and execute against the current target...
+  run-operation  Run the named macro with any supplied arguments.
+  seed           Load data from csv files into your data warehouse.
+  show           Generates executable SQL for a named resource or inline...
+  snapshot       Execute snapshots defined in your project
+  source         Manage your project's sources
+  test           Runs tests on data in deployed models.
+
+  Specify one of these sub-commands and you can find more help from there.
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ dbt init my_project
+10:42:43  Running with dbt=1.10.1
+10:42:43  Creating dbt configuration folder at /home/user/.dbt
+10:42:43
+Your new dbt project "my_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+10:42:43  Setting up your profile.
+Which database would you like to use?
+[1] duckdb
+
+(Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
+
+Enter a number: 1
+10:42:50  Profile my_project written to /home/user/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ ls
+logs  my_project  requirements.txt
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cd my_project/
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls
+README.md  analyses  dbt_project.yml  macros  models  seeds  snapshots  tests
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat dbt_project.yml
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'my_project'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'my_project'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  my_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ bt debug
+bt: command not found
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt debug
+10:43:41  Running with dbt=1.10.1
+10:43:41  dbt version: 1.10.1
+10:43:41  python version: 3.10.9
+10:43:41  python path: /home/user/anaconda3/bin/python
+10:43:41  os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+10:43:41  Using profiles dir at /home/user/.dbt
+10:43:41  Using profiles.yml file at /home/user/.dbt/profiles.yml
+10:43:41  Using dbt_project.yml file at /home/user/anaconda3/envs/dbt/my_project/dbt_project.yml
+10:43:41  adapter type: duckdb
+10:43:41  adapter version: 1.9.3
+10:43:41  Configuration:
+10:43:41    profiles.yml file [OK found and valid]
+10:43:41    dbt_project.yml file [OK found and valid]
+10:43:41  Required dependencies:
+10:43:41   - git [OK found]
+
+10:43:41  Connection:
+10:43:41    database: dev
+10:43:41    schema: main
+10:43:41    path: dev.duckdb
+10:43:41    config_options: None
+10:43:41    extensions: None
+10:43:41    settings: {}
+10:43:41    external_root: .
+10:43:41    use_credential_provider: None
+10:43:41    attach: None
+10:43:41    filesystems: None
+10:43:41    remote: None
+10:43:41    plugins: None
+10:43:41    disable_transactions: False
+10:43:41  Registered adapter: duckdb=1.9.3
+10:43:41    Connection test: [OK connection ok]
+
+10:43:41  All checks passed!
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls
+README.md  analyses  dbt_project.yml  dev.duckdb  logs  macros  models  seeds  snapshots  tests
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls models/
+example
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls models/example/
+my_first_dbt_model.sql  my_second_dbt_model.sql  schema.yml
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat models/example.sql
+cat: models/example.sql: No such file or directory
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat > models/example.sql
+-- models/example.sql
+select 1 as id, 'hello' as message
+^C
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt run
+10:44:48  Running with dbt=1.10.1
+10:44:48  Registered adapter: duckdb=1.9.3
+10:44:48  Unable to do partial parsing because saved manifest not found. Starting full parse.
+10:44:49  Found 3 models, 4 data tests, 428 macros
+10:44:49
+10:44:49  Concurrency: 1 threads (target='dev')
+10:44:49
+10:44:50  1 of 3 START sql view model main.example ....................................... [RUN]
+10:44:50  1 of 3 OK created sql view model main.example .................................. [OK in 0.08s]
+10:44:50  2 of 3 START sql table model main.my_first_dbt_model ........................... [RUN]
+10:44:50  2 of 3 OK created sql table model main.my_first_dbt_model ...................... [OK in 0.05s]
+10:44:50  3 of 3 START sql view model main.my_second_dbt_model ........................... [RUN]
+10:44:50  3 of 3 OK created sql view model main.my_second_dbt_model ...................... [OK in 0.08s]
+10:44:50
+10:44:50  Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.32 seconds (0.32s).
+10:44:50
+10:44:50  Completed successfully
+10:44:50
+10:44:50  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt docs generate
+10:45:17  Running with dbt=1.10.1
+10:45:17  Registered adapter: duckdb=1.9.3
+10:45:17  Found 3 models, 4 data tests, 428 macros
+10:45:17
+10:45:17  Concurrency: 1 threads (target='dev')
+10:45:17
+10:45:18  Building catalog
+10:45:18  Catalog written to /home/user/anaconda3/envs/dbt/my_project/target/catalog.json
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt docs serve
+10:45:29  Running with dbt=1.10.1
+Serving docs at 8080
+To access from your browser, navigate to: http://localhost:8080
+
+
+
+Press Ctrl+C to exit.
+tcgetpgrp failed: Not a tty
+127.0.0.1 - - [19/Jun/2025 19:45:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /$%7Brequire('./assets/favicons/favicon.ico')%7D HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /manifest.json?cb=1750329932120 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /catalog.json?cb=1750329932120 HTTP/1.1" 200 -
+^C11:00:58  Encountered an error:
+
+11:00:58  Traceback (most recent call last):
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 254, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 285, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/home/user/anaconda3/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/home/user/anaconda3/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$ sed 's/nishi/user/' dbt_execute.txt | grep nishi
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$ sed 's/nishi/user/' dbt_execute.txt | grep nis
+10:44:50  Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.32 seconds (0.32s).
+(base) user@DESKTOP-C0A2DE7:~/my_repo/dbt$ sed -e 's/nishi/user/' dbt_execute.txt
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ conda create -n my_dbt python=3.10 --file requirements.txt
+
+CondaFileIOError: 'requirements.txt'. [Errno 2] No such file or directory: 'requirements.txt'
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cp -ip ../
+.conda_envs_dir_test  dbt/                  my_env/               stremlit_env/
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cp -ip ../stremlit_env/requirements.txt ./
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ conda create -n my_dbt python=3.10 --file requirements.txt
+Collecting package metadata (current_repodata.json): done
+Solving environment: failed with repodata from current_repodata.json, will retry with next repodata source.
+Collecting package metadata (repodata.json): done
+Solving environment: done
+
+
+==> WARNING: A newer version of conda exists. <==
+  current version: 23.3.1
+  latest version: 25.5.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+Or to minimize the number of packages updated during conda update use
+
+     conda install conda=25.5.1
+
+
+
+## Package Plan ##
+
+  environment location: /home/user/anaconda3/envs/my_dbt
+
+  added / updated specs:
+    - matplotlib==3.9.2
+    - numpy==1.26.4
+    - pandas==2.2.3
+    - plotly==5.24.1
+    - python=3.10
+    - scikit-learn==1.5.2
+    - seaborn==0.13.2
+    - streamlit==1.39.0
+
+
+The following NEW packages will be INSTALLED:
+
+  _libgcc_mutex      pkgs/main/linux-64::_libgcc_mutex-0.1-main
+  _openmp_mutex      pkgs/main/linux-64::_openmp_mutex-5.1-1_gnu
+  altair             pkgs/main/linux-64::altair-5.5.0-py310h06a4308_0
+  arrow-cpp          pkgs/main/linux-64::arrow-cpp-19.0.0-h865e1df_2
+  attrs              pkgs/main/linux-64::attrs-24.3.0-py310h06a4308_0
+  aws-c-auth         pkgs/main/linux-64::aws-c-auth-0.6.19-h5eee18b_0
+  aws-c-cal          pkgs/main/linux-64::aws-c-cal-0.5.20-hdbd6064_0
+  aws-c-common       pkgs/main/linux-64::aws-c-common-0.8.5-h5eee18b_0
+  aws-c-compression  pkgs/main/linux-64::aws-c-compression-0.2.16-h5eee18b_0
+  aws-c-event-stream pkgs/main/linux-64::aws-c-event-stream-0.2.15-h6a678d5_0
+  aws-c-http         pkgs/main/linux-64::aws-c-http-0.6.25-h5eee18b_0
+  aws-c-io           pkgs/main/linux-64::aws-c-io-0.13.10-h5eee18b_0
+  aws-c-mqtt         pkgs/main/linux-64::aws-c-mqtt-0.7.13-h5eee18b_0
+  aws-c-s3           pkgs/main/linux-64::aws-c-s3-0.1.51-hdbd6064_0
+  aws-c-sdkutils     pkgs/main/linux-64::aws-c-sdkutils-0.1.6-h5eee18b_0
+  aws-checksums      pkgs/main/linux-64::aws-checksums-0.1.13-h5eee18b_0
+  aws-crt-cpp        pkgs/main/linux-64::aws-crt-cpp-0.18.16-h6a678d5_0
+  aws-sdk-cpp        pkgs/main/linux-64::aws-sdk-cpp-1.11.212-hecad206_0
+  blas               pkgs/main/linux-64::blas-1.0-mkl
+  blinker            pkgs/main/linux-64::blinker-1.9.0-py310h06a4308_0
+  boost-cpp          pkgs/main/linux-64::boost-cpp-1.82.0-hdb19cb5_2
+  bottleneck         pkgs/main/linux-64::bottleneck-1.4.2-py310ha9d4c09_0
+  brotli-python      pkgs/main/linux-64::brotli-python-1.0.9-py310h6a678d5_9
+  bzip2              pkgs/main/linux-64::bzip2-1.0.8-h5eee18b_6
+  c-ares             pkgs/main/linux-64::c-ares-1.19.1-h5eee18b_0
+  ca-certificates    pkgs/main/linux-64::ca-certificates-2025.2.25-h06a4308_0
+  cachetools         pkgs/main/linux-64::cachetools-5.5.1-py310h06a4308_0
+  certifi            pkgs/main/linux-64::certifi-2025.4.26-py310h06a4308_0
+  charset-normalizer pkgs/main/noarch::charset-normalizer-3.3.2-pyhd3eb1b0_0
+  click              pkgs/main/linux-64::click-8.1.8-py310h06a4308_0
+  contourpy          pkgs/main/linux-64::contourpy-1.3.1-py310hdb19cb5_0
+  cycler             pkgs/main/noarch::cycler-0.11.0-pyhd3eb1b0_0
+  cyrus-sasl         pkgs/main/linux-64::cyrus-sasl-2.1.28-h52b45da_1
+  expat              pkgs/main/linux-64::expat-2.7.1-h6a678d5_0
+  fontconfig         pkgs/main/linux-64::fontconfig-2.14.1-h55d465d_3
+  fonttools          pkgs/main/linux-64::fonttools-4.55.3-py310h5eee18b_0
+  freetype           pkgs/main/linux-64::freetype-2.13.3-h4a9f257_0
+  gflags             pkgs/main/linux-64::gflags-2.2.2-h6a678d5_1
+  gitdb              pkgs/main/noarch::gitdb-4.0.7-pyhd3eb1b0_0
+  gitpython          pkgs/main/linux-64::gitpython-3.1.43-py310h06a4308_0
+  glog               pkgs/main/linux-64::glog-0.5.0-h6a678d5_1
+  icu                pkgs/main/linux-64::icu-73.1-h6a678d5_0
+  idna               pkgs/main/linux-64::idna-3.7-py310h06a4308_0
+  intel-openmp       pkgs/main/linux-64::intel-openmp-2023.1.0-hdb19cb5_46306
+  jinja2             pkgs/main/linux-64::jinja2-3.1.6-py310h06a4308_0
+  joblib             pkgs/main/linux-64::joblib-1.4.2-py310h06a4308_0
+  jpeg               pkgs/main/linux-64::jpeg-9e-h5eee18b_3
+  jsonschema         pkgs/main/linux-64::jsonschema-4.23.0-py310h06a4308_0
+  jsonschema-specif~ pkgs/main/linux-64::jsonschema-specifications-2023.7.1-py310h06a4308_0
+  kiwisolver         pkgs/main/linux-64::kiwisolver-1.4.8-py310h6a678d5_0
+  krb5               pkgs/main/linux-64::krb5-1.20.1-h143b758_1
+  lcms2              pkgs/main/linux-64::lcms2-2.16-hb9589c4_0
+  ld_impl_linux-64   pkgs/main/linux-64::ld_impl_linux-64-2.40-h12ee557_0
+  lerc               pkgs/main/linux-64::lerc-4.0.0-h6a678d5_0
+  libabseil          pkgs/main/linux-64::libabseil-20250127.0-cxx17_h6a678d5_0
+  libboost           pkgs/main/linux-64::libboost-1.82.0-h109eef0_2
+  libbrotlicommon    pkgs/main/linux-64::libbrotlicommon-1.0.9-h5eee18b_9
+  libbrotlidec       pkgs/main/linux-64::libbrotlidec-1.0.9-h5eee18b_9
+  libbrotlienc       pkgs/main/linux-64::libbrotlienc-1.0.9-h5eee18b_9
+  libcups            pkgs/main/linux-64::libcups-2.4.2-h2d74bed_1
+  libcurl            pkgs/main/linux-64::libcurl-8.12.1-hc9e6f67_0
+  libdeflate         pkgs/main/linux-64::libdeflate-1.22-h5eee18b_0
+  libedit            pkgs/main/linux-64::libedit-3.1.20230828-h5eee18b_0
+  libev              pkgs/main/linux-64::libev-4.33-h7f8727e_1
+  libevent           pkgs/main/linux-64::libevent-2.1.12-hdbd6064_1
+  libffi             pkgs/main/linux-64::libffi-3.4.4-h6a678d5_1
+  libgcc-ng          pkgs/main/linux-64::libgcc-ng-11.2.0-h1234567_1
+  libgfortran-ng     pkgs/main/linux-64::libgfortran-ng-11.2.0-h00389a5_1
+  libgfortran5       pkgs/main/linux-64::libgfortran5-11.2.0-h1234567_1
+  libglib            pkgs/main/linux-64::libglib-2.78.4-hdc74915_0
+  libgomp            pkgs/main/linux-64::libgomp-11.2.0-h1234567_1
+  libgrpc            pkgs/main/linux-64::libgrpc-1.71.0-h2d74bed_0
+  libiconv           pkgs/main/linux-64::libiconv-1.16-h5eee18b_3
+  libnghttp2         pkgs/main/linux-64::libnghttp2-1.57.0-h2d74bed_0
+  libpng             pkgs/main/linux-64::libpng-1.6.39-h5eee18b_0
+  libpq              pkgs/main/linux-64::libpq-17.4-hdbd6064_0
+  libprotobuf        pkgs/main/linux-64::libprotobuf-5.29.3-h3cdef7c_1
+  libre2-11          pkgs/main/linux-64::libre2-11-2024.07.02-h6a678d5_0
+  libssh2            pkgs/main/linux-64::libssh2-1.11.1-h251f7ec_0
+  libstdcxx-ng       pkgs/main/linux-64::libstdcxx-ng-11.2.0-h1234567_1
+  libthrift          pkgs/main/linux-64::libthrift-0.15.0-h1795dd8_2
+  libtiff            pkgs/main/linux-64::libtiff-4.5.1-hffd6297_1
+  libuuid            pkgs/main/linux-64::libuuid-1.41.5-h5eee18b_0
+  libwebp-base       pkgs/main/linux-64::libwebp-base-1.3.2-h5eee18b_1
+  libxcb             pkgs/main/linux-64::libxcb-1.17.0-h9b100fa_0
+  libxkbcommon       pkgs/main/linux-64::libxkbcommon-1.9.1-h69220b7_0
+  libxml2            pkgs/main/linux-64::libxml2-2.13.8-hfdd30dd_0
+  lz4-c              pkgs/main/linux-64::lz4-c-1.9.4-h6a678d5_1
+  markdown-it-py     pkgs/main/linux-64::markdown-it-py-2.2.0-py310h06a4308_1
+  markupsafe         pkgs/main/linux-64::markupsafe-3.0.2-py310h5eee18b_0
+  matplotlib         pkgs/main/linux-64::matplotlib-3.9.2-py310h06a4308_1
+  matplotlib-base    pkgs/main/linux-64::matplotlib-base-3.9.2-py310hbfdbfaf_1
+  mdurl              pkgs/main/linux-64::mdurl-0.1.0-py310h06a4308_0
+  mkl                pkgs/main/linux-64::mkl-2023.1.0-h213fc3f_46344
+  mkl-service        pkgs/main/linux-64::mkl-service-2.4.0-py310h5eee18b_2
+  mkl_fft            pkgs/main/linux-64::mkl_fft-1.3.11-py310h5eee18b_0
+  mkl_random         pkgs/main/linux-64::mkl_random-1.2.8-py310h1128e8f_0
+  mysql              pkgs/main/linux-64::mysql-8.4.0-h721767e_2
+  narwhals           pkgs/main/linux-64::narwhals-1.31.0-py310h06a4308_1
+  ncurses            pkgs/main/linux-64::ncurses-6.4-h6a678d5_0
+  numexpr            pkgs/main/linux-64::numexpr-2.10.1-py310h3c60e43_0
+  numpy              pkgs/main/linux-64::numpy-1.26.4-py310h5f9d8c6_0
+  numpy-base         pkgs/main/linux-64::numpy-base-1.26.4-py310hb5e798b_0
+  openjpeg           pkgs/main/linux-64::openjpeg-2.5.2-he7f1fd0_0
+  openldap           pkgs/main/linux-64::openldap-2.6.4-h42fbc30_0
+  openssl            pkgs/main/linux-64::openssl-3.0.16-h5eee18b_0
+  orc                pkgs/main/linux-64::orc-2.1.1-hd396ef6_0
+  packaging          pkgs/main/linux-64::packaging-24.2-py310h06a4308_0
+  pandas             pkgs/main/linux-64::pandas-2.2.3-py310h6a678d5_0
+  pcre2              pkgs/main/linux-64::pcre2-10.42-hebb0a14_1
+  pillow             pkgs/main/linux-64::pillow-10.4.0-py310h5eee18b_0
+  pip                pkgs/main/noarch::pip-25.1-pyhc872135_2
+  plotly             pkgs/main/linux-64::plotly-5.24.1-py310h2f386ee_1
+  protobuf           pkgs/main/linux-64::protobuf-5.29.3-py310he621ea3_0
+  pthread-stubs      pkgs/main/linux-64::pthread-stubs-0.3-h0ce48e5_1
+  pyarrow            pkgs/main/linux-64::pyarrow-19.0.0-py310h6a678d5_1
+  pydeck             pkgs/main/linux-64::pydeck-0.9.1-py310h06a4308_0
+  pygments           pkgs/main/linux-64::pygments-2.19.1-py310h06a4308_0
+  pyparsing          pkgs/main/linux-64::pyparsing-3.2.0-py310h06a4308_0
+  pyqt               pkgs/main/linux-64::pyqt-6.7.1-py310h6a678d5_1
+  pyqt6-sip          pkgs/main/linux-64::pyqt6-sip-13.9.1-py310h5eee18b_1
+  pysocks            pkgs/main/linux-64::pysocks-1.7.1-py310h06a4308_0
+  python             pkgs/main/linux-64::python-3.10.18-h1a3bd86_0
+  python-dateutil    pkgs/main/linux-64::python-dateutil-2.9.0post0-py310h06a4308_2
+  python-tzdata      pkgs/main/noarch::python-tzdata-2025.2-pyhd3eb1b0_0
+  pytz               pkgs/main/linux-64::pytz-2024.1-py310h06a4308_0
+  pyyaml             pkgs/main/linux-64::pyyaml-6.0.2-py310h5eee18b_0
+  qtbase             pkgs/main/linux-64::qtbase-6.7.3-hdaa5aa8_0
+  qtdeclarative      pkgs/main/linux-64::qtdeclarative-6.7.3-h6a678d5_0
+  qtsvg              pkgs/main/linux-64::qtsvg-6.7.3-he621ea3_0
+  qttools            pkgs/main/linux-64::qttools-6.7.3-h80c7b02_0
+  qtwebchannel       pkgs/main/linux-64::qtwebchannel-6.7.3-h6a678d5_0
+  qtwebsockets       pkgs/main/linux-64::qtwebsockets-6.7.3-h6a678d5_0
+  re2                pkgs/main/linux-64::re2-2024.07.02-hdb19cb5_0
+  readline           pkgs/main/linux-64::readline-8.2-h5eee18b_0
+  referencing        pkgs/main/linux-64::referencing-0.30.2-py310h06a4308_0
+  requests           pkgs/main/linux-64::requests-2.32.3-py310h06a4308_1
+  rich               pkgs/main/linux-64::rich-13.9.4-py310h06a4308_0
+  rpds-py            pkgs/main/linux-64::rpds-py-0.22.3-py310h4aa5aa6_0
+  s2n                pkgs/main/linux-64::s2n-1.3.27-hdbd6064_0
+  scikit-learn       pkgs/main/linux-64::scikit-learn-1.5.2-py310h6a678d5_0
+  scipy              pkgs/main/linux-64::scipy-1.15.3-py310h525edd1_0
+  seaborn            pkgs/main/linux-64::seaborn-0.13.2-py310h06a4308_3
+  setuptools         pkgs/main/linux-64::setuptools-78.1.1-py310h06a4308_0
+  sip                pkgs/main/linux-64::sip-6.10.0-py310h6a678d5_0
+  six                pkgs/main/linux-64::six-1.17.0-py310h06a4308_0
+  smmap              pkgs/main/noarch::smmap-4.0.0-pyhd3eb1b0_0
+  snappy             pkgs/main/linux-64::snappy-1.2.1-h6a678d5_0
+  sqlite             pkgs/main/linux-64::sqlite-3.45.3-h5eee18b_0
+  streamlit          pkgs/main/linux-64::streamlit-1.39.0-py312h06a4308_0
+  tbb                pkgs/main/linux-64::tbb-2021.8.0-hdb19cb5_0
+  tenacity           pkgs/main/linux-64::tenacity-9.0.0-py310h06a4308_0
+  threadpoolctl      pkgs/main/linux-64::threadpoolctl-3.5.0-py310h2f386ee_0
+  tk                 pkgs/main/linux-64::tk-8.6.14-h993c535_1
+  toml               pkgs/main/noarch::toml-0.10.2-pyhd3eb1b0_0
+  tomli              pkgs/main/linux-64::tomli-2.0.1-py310h06a4308_0
+  tornado            pkgs/main/linux-64::tornado-6.5.1-py310h5eee18b_0
+  typing-extensions  pkgs/main/linux-64::typing-extensions-4.12.2-py310h06a4308_0
+  typing_extensions  pkgs/main/linux-64::typing_extensions-4.12.2-py310h06a4308_0
+  tzdata             pkgs/main/noarch::tzdata-2025b-h04d1e81_0
+  unicodedata2       pkgs/main/linux-64::unicodedata2-15.1.0-py310h5eee18b_1
+  urllib3            pkgs/main/linux-64::urllib3-2.3.0-py310h06a4308_0
+  utf8proc           pkgs/main/linux-64::utf8proc-2.6.1-h5eee18b_1
+  watchdog           pkgs/main/linux-64::watchdog-4.0.2-py310h06a4308_0
+  wheel              pkgs/main/linux-64::wheel-0.45.1-py310h06a4308_0
+  xcb-util           pkgs/main/linux-64::xcb-util-0.4.1-h5eee18b_2
+  xcb-util-cursor    pkgs/main/linux-64::xcb-util-cursor-0.1.5-h5eee18b_0
+  xcb-util-image     pkgs/main/linux-64::xcb-util-image-0.4.0-h5eee18b_2
+  xcb-util-renderut~ pkgs/main/linux-64::xcb-util-renderutil-0.3.10-h5eee18b_0
+  xkeyboard-config   pkgs/main/linux-64::xkeyboard-config-2.44-h5eee18b_0
+  xorg-libx11        pkgs/main/linux-64::xorg-libx11-1.8.12-h9b100fa_1
+  xorg-libxau        pkgs/main/linux-64::xorg-libxau-1.0.12-h9b100fa_0
+  xorg-libxdmcp      pkgs/main/linux-64::xorg-libxdmcp-1.1.5-h9b100fa_0
+  xorg-xorgproto     pkgs/main/linux-64::xorg-xorgproto-2024.1-h5eee18b_1
+  xz                 pkgs/main/linux-64::xz-5.6.4-h5eee18b_1
+  yaml               pkgs/main/linux-64::yaml-0.2.5-h7b6447c_0
+  zlib               pkgs/main/linux-64::zlib-1.2.13-h5eee18b_1
+  zstd               pkgs/main/linux-64::zstd-1.5.6-hc292b87_0
+
+
+Proceed ([y]/n)? y
+
+
+Downloading and Extracting Packages
+
+Preparing transaction: done
+Verifying transaction: done
+Executing transaction: done
+#
+# To activate this environment, use
+#
+#     $ conda activate my_dbt
+#
+# To deactivate an active environment, use
+#
+#     $ conda deactivate
+
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ pip install dbt-duckdb
+Collecting dbt-duckdb
+  Downloading dbt_duckdb-1.9.3-py3-none-any.whl (70 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 70.0/70.0 kB 2.5 MB/s eta 0:00:00
+Collecting dbt-adapters<2,>=1
+  Downloading dbt_adapters-1.16.0-py3-none-any.whl (166 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 166.6/166.6 kB 2.8 MB/s eta 0:00:00
+Collecting duckdb>=1.0.0
+  Downloading duckdb-1.3.1-cp310-cp310-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (21.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 21.1/21.1 MB 10.7 MB/s eta 0:00:00
+Collecting dbt-core>=1.8.0
+  Downloading dbt_core-1.10.1-py3-none-any.whl (972 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 972.9/972.9 kB 10.3 MB/s eta 0:00:00
+Collecting dbt-common<2,>=1
+  Downloading dbt_common-1.25.0-py3-none-any.whl (85 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 86.0/86.0 kB 6.5 MB/s eta 0:00:00
+Collecting agate<2.0,>=1.0
+  Downloading agate-1.13.0-py2.py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.9/95.9 kB 6.4 MB/s eta 0:00:00
+Requirement already satisfied: pytz>=2015.7 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-adapters<2,>=1->dbt-duckdb) (2022.7)
+Collecting mashumaro[msgpack]<3.15,>=3.9
+  Downloading mashumaro-3.14-py3-none-any.whl (92 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.2/92.2 kB 8.0 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions<5.0,>=4.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-adapters<2,>=1->dbt-duckdb) (4.4.0)
+Collecting dbt-protos<2.0,>=1.0.291
+  Downloading dbt_protos-1.0.330-py3-none-any.whl (91 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 91.1/91.1 kB 6.6 MB/s eta 0:00:00
+Collecting protobuf<6.0,>=5.0
+  Downloading protobuf-5.29.5-cp38-abi3-manylinux2014_x86_64.whl (319 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 319.9/319.9 kB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: pathspec<0.13,>=0.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (0.10.3)
+Requirement already satisfied: python-dateutil<3.0,>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (2.8.2)
+Collecting isodate<0.7,>=0.6
+  Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.7/41.7 kB 4.1 MB/s eta 0:00:00
+Collecting jinja2<4,>=3.1.3
+  Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 134.9/134.9 kB 7.5 MB/s eta 0:00:00
+Requirement already satisfied: jsonschema<5.0,>=4.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (4.17.3)
+Requirement already satisfied: colorama<0.5,>=0.3.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (0.4.6)
+Collecting deepdiff<8.0,>=7.0
+  Downloading deepdiff-7.0.1-py3-none-any.whl (80 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.8/80.8 kB 5.9 MB/s eta 0:00:00
+Collecting agate<2.0,>=1.0
+  Downloading agate-1.9.1-py2.py3-none-any.whl (95 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 95.1/95.1 kB 8.4 MB/s eta 0:00:00
+Requirement already satisfied: requests<3.0.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-common<2,>=1->dbt-duckdb) (2.28.1)
+Collecting pydantic<2
+  Downloading pydantic-1.10.22-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 10.6 MB/s eta 0:00:00
+Requirement already satisfied: click<9.0,>=8.0.2 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (8.0.4)
+Collecting dbt-extractor<=0.6,>=0.5.0
+  Downloading dbt_extractor-0.6.0-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (442 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 442.7/442.7 kB 9.3 MB/s eta 0:00:00
+Requirement already satisfied: pyyaml>=6.0 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (6.0)
+Collecting snowplow-tracker<2.0,>=1.0.2
+  Downloading snowplow_tracker-1.1.0-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.1/44.1 kB 5.0 MB/s eta 0:00:00
+Requirement already satisfied: networkx<4.0,>=2.3 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (2.8.4)
+Collecting dbt-semantic-interfaces<0.9,>=0.8.3
+  Downloading dbt_semantic_interfaces-0.8.4-py3-none-any.whl (146 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 146.6/146.6 kB 7.4 MB/s eta 0:00:00
+Collecting sqlparse<0.6.0,>=0.5.0
+  Downloading sqlparse-0.5.3-py3-none-any.whl (44 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.4/44.4 kB 4.1 MB/s eta 0:00:00
+Requirement already satisfied: packaging>20.9 in /home/user/anaconda3/lib/python3.10/site-packages (from dbt-core>=1.8.0->dbt-duckdb) (22.0)
+Collecting daff>=1.3.46
+  Downloading daff-1.4.2-py3-none-any.whl (144 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 144.9/144.9 kB 8.7 MB/s eta 0:00:00
+Collecting jsonschema<5.0,>=4.0
+  Downloading jsonschema-4.24.0-py3-none-any.whl (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.7/88.7 kB 7.1 MB/s eta 0:00:00
+Collecting parsedatetime!=2.5,>=2.1
+  Downloading parsedatetime-2.6-py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.5/42.5 kB 3.7 MB/s eta 0:00:00
+Collecting pytimeparse>=1.1.5
+  Downloading pytimeparse-1.1.8-py2.py3-none-any.whl (10.0 kB)
+Requirement already satisfied: Babel>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (2.11.0)
+Requirement already satisfied: python-slugify>=1.2.1 in /home/user/anaconda3/lib/python3.10/site-packages (from agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (5.0.2)
+Collecting leather>=0.3.2
+  Downloading leather-0.4.0-py2.py3-none-any.whl (30 kB)
+Collecting more-itertools<11.0,>=8.0
+  Downloading more_itertools-10.7.0-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 65.3/65.3 kB 4.8 MB/s eta 0:00:00
+Collecting importlib-metadata<9,>=6.0
+  Downloading importlib_metadata-8.7.0-py3-none-any.whl (27 kB)
+Collecting ordered-set<4.2.0,>=4.1.0
+  Downloading ordered_set-4.1.0-py3-none-any.whl (7.6 kB)
+Requirement already satisfied: six in /home/user/anaconda3/lib/python3.10/site-packages (from isodate<0.7,>=0.6->dbt-common<2,>=1->dbt-duckdb) (1.16.0)
+Requirement already satisfied: MarkupSafe>=2.0 in /home/user/anaconda3/lib/python3.10/site-packages (from jinja2<4,>=3.1.3->dbt-common<2,>=1->dbt-duckdb) (2.1.1)
+Collecting attrs>=22.2.0
+  Downloading attrs-25.3.0-py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.8/63.8 kB 7.0 MB/s eta 0:00:00
+Collecting jsonschema-specifications>=2023.03.6
+  Downloading jsonschema_specifications-2025.4.1-py3-none-any.whl (18 kB)
+Collecting referencing>=0.28.4
+  Downloading referencing-0.36.2-py3-none-any.whl (26 kB)
+Collecting rpds-py>=0.7.1
+  Downloading rpds_py-0.25.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (386 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 387.0/387.0 kB 8.9 MB/s eta 0:00:00
+Requirement already satisfied: msgpack>=0.5.6 in /home/user/anaconda3/lib/python3.10/site-packages (from mashumaro[msgpack]<3.15,>=3.9->dbt-adapters<2,>=1->dbt-duckdb) (1.0.3)
+Requirement already satisfied: certifi>=2017.4.17 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (2022.12.7)
+Requirement already satisfied: idna<4,>=2.5 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (3.4)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (1.26.14)
+Requirement already satisfied: charset-normalizer<3,>=2 in /home/user/anaconda3/lib/python3.10/site-packages (from requests<3.0.0->dbt-common<2,>=1->dbt-duckdb) (2.0.4)
+Collecting zipp>=3.20
+  Downloading zipp-3.23.0-py3-none-any.whl (10 kB)
+Requirement already satisfied: text-unidecode>=1.3 in /home/user/anaconda3/lib/python3.10/site-packages (from python-slugify>=1.2.1->agate<2.0,>=1.0->dbt-adapters<2,>=1->dbt-duckdb) (1.3)
+Installing collected packages: pytimeparse, parsedatetime, leather, daff, zipp, sqlparse, rpds-py, pydantic, protobuf, ordered-set, more-itertools, mashumaro, jinja2, isodate, duckdb, dbt-extractor, attrs, snowplow-tracker, referencing, importlib-metadata, deepdiff, dbt-protos, agate, jsonschema-specifications, jsonschema, dbt-semantic-interfaces, dbt-common, dbt-adapters, dbt-core, dbt-duckdb
+  Attempting uninstall: zipp
+    Found existing installation: zipp 3.11.0
+    Uninstalling zipp-3.11.0:
+      Successfully uninstalled zipp-3.11.0
+  Attempting uninstall: jinja2
+    Found existing installation: Jinja2 3.1.2
+    Uninstalling Jinja2-3.1.2:
+      Successfully uninstalled Jinja2-3.1.2
+  Attempting uninstall: attrs
+    Found existing installation: attrs 22.1.0
+    Uninstalling attrs-22.1.0:
+      Successfully uninstalled attrs-22.1.0
+  Attempting uninstall: importlib-metadata
+    Found existing installation: importlib-metadata 4.11.3
+    Uninstalling importlib-metadata-4.11.3:
+      Successfully uninstalled importlib-metadata-4.11.3
+  Attempting uninstall: jsonschema
+    Found existing installation: jsonschema 4.17.3
+    Uninstalling jsonschema-4.17.3:
+      Successfully uninstalled jsonschema-4.17.3
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+spyder 5.4.1 requires pyqt5<5.16, which is not installed.
+spyder 5.4.1 requires pyqtwebengine<5.16, which is not installed.
+conda-repo-cli 1.0.41 requires requests_mock, which is not installed.
+conda-repo-cli 1.0.41 requires clyent==1.2.1, but you have clyent 1.2.2 which is incompatible.
+conda-repo-cli 1.0.41 requires nbformat==5.4.0, but you have nbformat 5.7.0 which is incompatible.
+Successfully installed agate-1.9.1 attrs-25.3.0 daff-1.4.2 dbt-adapters-1.16.0 dbt-common-1.25.0 dbt-core-1.10.1 dbt-duckdb-1.9.3 dbt-extractor-0.6.0 dbt-protos-1.0.330 dbt-semantic-interfaces-0.8.4 deepdiff-7.0.1 duckdb-1.3.1 importlib-metadata-8.7.0 isodate-0.6.1 jinja2-3.1.6 jsonschema-4.24.0 jsonschema-specifications-2025.4.1 leather-0.4.0 mashumaro-3.14 more-itertools-10.7.0 ordered-set-4.1.0 parsedatetime-2.6 protobuf-5.29.5 pydantic-1.10.22 pytimeparse-1.1.8 referencing-0.36.2 rpds-py-0.25.1 snowplow-tracker-1.1.0 sqlparse-0.5.3 zipp-3.23.0
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ dbt
+Usage: dbt [OPTIONS] COMMAND [ARGS]...
+
+  An ELT tool for managing your SQL transformations and data models. For more
+  documentation on these commands, visit: docs.getdbt.com
+
+Options:
+  --cache-selected-only / --no-cache-selected-only
+                                  At start of run, populate relational cache
+                                  only for schemas containing selected nodes,
+                                  or for all schemas of interest.
+  -d, --debug / --no-debug        Display debug logging during dbt execution.
+                                  Useful for debugging and making bug reports.
+  --defer / --no-defer            If set, resolve unselected nodes by
+                                  deferring to the manifest within the --state
+                                  directory.
+  --defer-state DIRECTORY         Override the state directory for deferral
+                                  only.
+  --deprecated-favor-state TEXT   Internal flag for deprecating old env var.
+  -x, --fail-fast / --no-fail-fast
+                                  Stop execution on first failure.
+  --favor-state / --no-favor-state
+                                  If set, defer to the argument provided to
+                                  the state flag for resolving unselected
+                                  nodes, even if the node(s) exist as a
+                                  database object in the current environment.
+  --indirect-selection [eager|cautious|buildable|empty]
+                                  Choose which tests to select that are
+                                  adjacent to selected resources. Eager is
+                                  most inclusive, cautious is most exclusive,
+                                  and buildable is in between. Empty includes
+                                  no tests at all.
+  --log-cache-events / --no-log-cache-events
+                                  Enable verbose logging for relational cache
+                                  events to help when debugging.
+  --log-format [text|debug|json|default]
+                                  Specify the format of logging to the console
+                                  and the log file. Use --log-format-file to
+                                  configure the format for the log file
+                                  differently than the console.
+  --log-format-file [text|debug|json|default]
+                                  Specify the format of logging to the log
+                                  file by overriding the default value and the
+                                  general --log-format setting.
+  --log-level [debug|info|warn|error|none]
+                                  Specify the minimum severity of events that
+                                  are logged to the console and the log file.
+                                  Use --log-level-file to configure the
+                                  severity for the log file differently than
+                                  the console.
+  --log-level-file [debug|info|warn|error|none]
+                                  Specify the minimum severity of events that
+                                  are logged to the log file by overriding the
+                                  default value and the general --log-level
+                                  setting.
+  --log-path PATH                 Configure the 'log-path'. Only applies this
+                                  setting for the current run. Overrides the
+                                  'DBT_LOG_PATH' if it is set.
+  --partial-parse / --no-partial-parse
+                                  Allow for partial parsing by looking for and
+                                  writing to a pickle file in the target
+                                  directory. This overrides the user
+                                  configuration file.
+  --populate-cache / --no-populate-cache
+                                  At start of run, use `show` or
+                                  `information_schema` queries to populate a
+                                  relational cache, which can speed up
+                                  subsequent materializations.
+  --print / --no-print            Output all {{ print() }} macro calls.
+  --printer-width INTEGER         Sets the width of terminal output
+  --profile TEXT                  Which existing profile to load. Overrides
+                                  setting in dbt_project.yml.
+  -q, --quiet / --no-quiet        Suppress all non-error logging to stdout.
+                                  Does not affect {{ print() }} macro calls.
+  -r, --record-timing-info PATH   When this option is passed, dbt will output
+                                  low-level timing stats to the specified
+                                  file. Example: `--record-timing-info
+                                  output.profile`
+  --send-anonymous-usage-stats / --no-send-anonymous-usage-stats
+                                  Send anonymous usage stats to dbt Labs.
+  --show-all-deprecations / --no-show-all-deprecations
+                                  By default, each type of a deprecation
+                                  warning is only shown once. Use this flag to
+                                  show all deprecation warning instances.
+  --state DIRECTORY               Unless overridden, use this state directory
+                                  for both state comparison and deferral.
+  --static-parser / --no-static-parser
+                                  Use the static parser.
+  -t, --target TEXT               Which target to load for the given profile
+  --use-colors / --no-use-colors  Specify whether log output is colorized in
+                                  the console and the log file. Use --use-
+                                  colors-file/--no-use-colors-file to colorize
+                                  the log file differently than the console.
+  --use-colors-file / --no-use-colors-file
+                                  Specify whether log file output is colorized
+                                  by overriding the default value and the
+                                  general --use-colors/--no-use-colors
+                                  setting.
+  --use-experimental-parser / --no-use-experimental-parser
+                                  Enable experimental parsing features.
+  -V, -v, --version               Show version information and exit
+  --version-check / --no-version-check
+                                  If set, ensure the installed dbt version
+                                  matches the require-dbt-version specified in
+                                  the dbt_project.yml file (if any).
+                                  Otherwise, allow them to differ.
+  --warn-error                    If dbt would normally warn, instead raise an
+                                  exception. Examples include --select that
+                                  selects nothing, deprecations,
+                                  configurations with no associated models,
+                                  invalid test configurations, and missing
+                                  sources/refs in tests.
+  --warn-error-options WARNERROROPTIONSTYPE
+                                  If dbt would normally warn, instead raise an
+                                  exception based on error/warn configuration.
+                                  Examples include --select that selects
+                                  nothing, deprecations, configurations with
+                                  no associated models, invalid test
+                                  configurations, and missing sources/refs in
+                                  tests. This argument should be a YAML
+                                  string, with keys 'error' or 'warn'. eg.
+                                  '{"error": "all", "warn":
+                                  ["NoNodesForSelectionCriteria"]}'
+  --write-json / --no-write-json  Whether or not to write the manifest.json
+                                  and run_results.json files to the target
+                                  directory
+  --upload-to-artifacts-ingest-api / --no-upload-to-artifacts-ingest-api
+                                  Whether or not to upload the artifacts to
+                                  the dbt Cloud API
+  -h, --help                      Show this message and exit.
+
+Commands:
+  build          Run all seeds, models, snapshots, and tests in DAG order
+  clean          Delete all folders in the clean-targets list (usually...
+  clone          Create clones of selected nodes based on their location...
+  compile        Generates executable SQL from source, model, test, and...
+  debug          Show information on the current dbt environment and...
+  deps           Install dbt packages specified.
+  docs           Generate or serve the documentation website for your...
+  init           Initialize a new dbt project.
+  list           List the resources in your project
+  parse          Parses the project and provides information on performance
+  retry          Retry the nodes that failed in the previous run.
+  run            Compile SQL and execute against the current target...
+  run-operation  Run the named macro with any supplied arguments.
+  seed           Load data from csv files into your data warehouse.
+  show           Generates executable SQL for a named resource or inline...
+  snapshot       Execute snapshots defined in your project
+  source         Manage your project's sources
+  test           Runs tests on data in deployed models.
+
+  Specify one of these sub-commands and you can find more help from there.
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ dbt init my_project
+10:42:43  Running with dbt=1.10.1
+10:42:43  Creating dbt configuration folder at /home/user/.dbt
+10:42:43
+Your new dbt project "my_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+10:42:43  Setting up your profile.
+Which database would you like to use?
+[1] duckdb
+
+(Don't see the one you want? https://docs.getdbt.com/docs/available-adapters)
+
+Enter a number: 1
+10:42:50  Profile my_project written to /home/user/.dbt/profiles.yml using target's sample configuration. Once updated, you'll be able to start developing with dbt.
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ ls
+logs  my_project  requirements.txt
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt$ cd my_project/
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls
+README.md  analyses  dbt_project.yml  macros  models  seeds  snapshots  tests
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat dbt_project.yml
+
+# Name your project! Project names should contain only lowercase characters
+# and underscores. A good package name should reflect your organization's
+# name or the intended use of these models
+name: 'my_project'
+version: '1.0.0'
+
+# This setting configures which "profile" dbt uses for this project.
+profile: 'my_project'
+
+# These configurations specify where dbt should look for different types of files.
+# The `model-paths` config, for example, states that models in this project can be
+# found in the "models/" directory. You probably won't need to change these!
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+
+# Configuring models
+# Full documentation: https://docs.getdbt.com/docs/configuring-models
+
+# In this example config, we tell dbt to build all models in the example/
+# directory as views. These settings can be overridden in the individual model
+# files using the `{{ config(...) }}` macro.
+models:
+  my_project:
+    # Config indicated by + and applies to all files under models/example/
+    example:
+      +materialized: view
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ bt debug
+bt: command not found
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt debug
+10:43:41  Running with dbt=1.10.1
+10:43:41  dbt version: 1.10.1
+10:43:41  python version: 3.10.9
+10:43:41  python path: /home/user/anaconda3/bin/python
+10:43:41  os info: Linux-5.15.153.1-microsoft-standard-WSL2-x86_64-with-glibc2.31
+10:43:41  Using profiles dir at /home/user/.dbt
+10:43:41  Using profiles.yml file at /home/user/.dbt/profiles.yml
+10:43:41  Using dbt_project.yml file at /home/user/anaconda3/envs/dbt/my_project/dbt_project.yml
+10:43:41  adapter type: duckdb
+10:43:41  adapter version: 1.9.3
+10:43:41  Configuration:
+10:43:41    profiles.yml file [OK found and valid]
+10:43:41    dbt_project.yml file [OK found and valid]
+10:43:41  Required dependencies:
+10:43:41   - git [OK found]
+
+10:43:41  Connection:
+10:43:41    database: dev
+10:43:41    schema: main
+10:43:41    path: dev.duckdb
+10:43:41    config_options: None
+10:43:41    extensions: None
+10:43:41    settings: {}
+10:43:41    external_root: .
+10:43:41    use_credential_provider: None
+10:43:41    attach: None
+10:43:41    filesystems: None
+10:43:41    remote: None
+10:43:41    plugins: None
+10:43:41    disable_transactions: False
+10:43:41  Registered adapter: duckdb=1.9.3
+10:43:41    Connection test: [OK connection ok]
+
+10:43:41  All checks passed!
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls
+README.md  analyses  dbt_project.yml  dev.duckdb  logs  macros  models  seeds  snapshots  tests
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls models/
+example
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ ls models/example/
+my_first_dbt_model.sql  my_second_dbt_model.sql  schema.yml
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat models/example.sql
+cat: models/example.sql: No such file or directory
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ cat > models/example.sql
+-- models/example.sql
+select 1 as id, 'hello' as message
+^C
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt run
+10:44:48  Running with dbt=1.10.1
+10:44:48  Registered adapter: duckdb=1.9.3
+10:44:48  Unable to do partial parsing because saved manifest not found. Starting full parse.
+10:44:49  Found 3 models, 4 data tests, 428 macros
+10:44:49
+10:44:49  Concurrency: 1 threads (target='dev')
+10:44:49
+10:44:50  1 of 3 START sql view model main.example ....................................... [RUN]
+10:44:50  1 of 3 OK created sql view model main.example .................................. [OK in 0.08s]
+10:44:50  2 of 3 START sql table model main.my_first_dbt_model ........................... [RUN]
+10:44:50  2 of 3 OK created sql table model main.my_first_dbt_model ...................... [OK in 0.05s]
+10:44:50  3 of 3 START sql view model main.my_second_dbt_model ........................... [RUN]
+10:44:50  3 of 3 OK created sql view model main.my_second_dbt_model ...................... [OK in 0.08s]
+10:44:50
+10:44:50  Finished running 1 table model, 2 view models in 0 hours 0 minutes and 0.32 seconds (0.32s).
+10:44:50
+10:44:50  Completed successfully
+10:44:50
+10:44:50  Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=3
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt docs generate
+10:45:17  Running with dbt=1.10.1
+10:45:17  Registered adapter: duckdb=1.9.3
+10:45:17  Found 3 models, 4 data tests, 428 macros
+10:45:17
+10:45:17  Concurrency: 1 threads (target='dev')
+10:45:17
+10:45:18  Building catalog
+10:45:18  Catalog written to /home/user/anaconda3/envs/dbt/my_project/target/catalog.json
+(base) user@DESKTOP-C0A2DE7:~/anaconda3/envs/dbt/my_project$ dbt docs serve
+10:45:29  Running with dbt=1.10.1
+Serving docs at 8080
+To access from your browser, navigate to: http://localhost:8080
+
+
+
+Press Ctrl+C to exit.
+tcgetpgrp failed: Not a tty
+127.0.0.1 - - [19/Jun/2025 19:45:31] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] code 404, message File not found
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /$%7Brequire('./assets/favicons/favicon.ico')%7D HTTP/1.1" 404 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /manifest.json?cb=1750329932120 HTTP/1.1" 200 -
+127.0.0.1 - - [19/Jun/2025 19:45:32] "GET /catalog.json?cb=1750329932120 HTTP/1.1" 200 -
+^C11:00:58  Encountered an error:
+
+11:00:58  Traceback (most recent call last):
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 161, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 111, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 254, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 285, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/requires.py", line 332, in wrapper
+    return func(*args, **kwargs)
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/cli/main.py", line 307, in docs_serve
+    results = task.run()
+  File "/home/user/anaconda3/lib/python3.10/site-packages/dbt/task/docs/serve.py", line 29, in run
+    httpd.serve_forever()
+  File "/home/user/anaconda3/lib/python3.10/socketserver.py", line 232, in serve_forever
+    ready = selector.select(poll_interval)
+  File "/home/user/anaconda3/lib/python3.10/selectors.py", line 416, in select
+    fd_event_list = self._selector.poll(timeout)
+KeyboardInterrupt
