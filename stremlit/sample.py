@@ -13,7 +13,8 @@ from sklearn.metrics import r2_score, mean_absolute_error, mean_squared_error
 sns.set_theme()
 
 # Display a title
-st.title("Linear Regression on California Housing Prices")
+st.title("これはいまむちゃん向けのstreamlit勉強用のLinear Regression on California Housing Prices")
+
 
 # Load the California Housing dataset
 dataset = fetch_california_housing()
@@ -175,4 +176,3 @@ with st.expander("Model Evaluation"):
     plt.ylim(y_min, y_max)
     plt.legend()
     st.pyplot(fig)
-    
